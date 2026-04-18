@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ScopeProof — Support</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,700;1,9..144,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #FAFAF8;
+      --surface: #FFFFFF;
+      --text: #1A1A1A;
+      --text-secondary: #6B6B6B;
+      --accent: #2F80ED;
+      --accent-soft: #E8F1FD;
+      --accent-deep: #1E3A5F;
+      --border: #E8E8E6;
+      --radius: 14px;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'DM Sans', -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .page {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 80px 24px 120px;
+    }
+
+    /* ── Header ── */
+    .header {
+      text-align: center;
+      margin-bottom: 64px;
+    }
+
+    .app-icon {
+      width: 88px;
+      height: 88px;
+      border-radius: 20px;
+      margin: 0 auto 24px;
+      display: block;
+      box-shadow: 0 8px 32px rgba(47, 128, 237, 0.2);
+    }
+
+    .header h1 {
+      font-family: 'Fraunces', Georgia, serif;
+      font-weight: 700;
+      font-size: 2rem;
+      letter-spacing: -0.02em;
+      margin-bottom: 8px;
+      color: var(--accent-deep);
+    }
+
+    .header .tagline {
+      color: var(--text-secondary);
+      font-size: 1.05rem;
+      font-weight: 300;
+    }
+
+    /* ── Contact card ── */
+    .contact-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 32px;
+      margin-bottom: 32px;
+    }
+
+    .contact-card h2 {
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: 1.25rem;
+      font-weight: 500;
+      margin-bottom: 12px;
+      color: var(--accent-deep);
+    }
+
+    .contact-card p {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      margin-bottom: 20px;
+    }
+
+    .email-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      text-decoration: none;
+      padding: 12px 20px;
+      border-radius: 10px;
+      font-weight: 500;
+      font-size: 0.95rem;
+      transition: background 0.2s, transform 0.15s;
+    }
+
+    .email-link:hover {
+      background: #D4E4FB;
+      transform: translateY(-1px);
+    }
+
+    .email-link svg {
+      width: 18px;
+      height: 18px;
+      fill: var(--accent);
+      flex-shrink: 0;
+    }
+
+    /* ── FAQ ── */
+    .faq { margin-bottom: 32px; }
+
+    .faq h2 {
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: 1.25rem;
+      font-weight: 500;
+      margin-bottom: 16px;
+      color: var(--accent-deep);
+    }
+
+    details {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      margin-bottom: 8px;
+      overflow: hidden;
+      transition: box-shadow 0.2s;
+    }
+
+    details[open] {
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+    }
+
+    summary {
+      padding: 18px 24px;
+      font-weight: 500;
+      font-size: 0.95rem;
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      user-select: none;
+    }
+
+    summary::-webkit-details-marker { display: none; }
+
+    summary::after {
+      content: '+';
+      font-size: 1.2rem;
+      color: var(--text-secondary);
+      font-weight: 300;
+      transition: transform 0.2s;
+    }
+
+    details[open] summary::after {
+      transform: rotate(45deg);
+    }
+
+    details .answer {
+      padding: 0 24px 18px;
+      color: var(--text-secondary);
+      font-size: 0.93rem;
+      line-height: 1.7;
+    }
+
+    details .answer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    details .answer a:hover {
+      text-decoration: underline;
+    }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center;
+      color: var(--text-secondary);
+      font-size: 0.82rem;
+      padding-top: 48px;
+      border-top: 1px solid var(--border);
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 500px) {
+      .page { padding: 48px 18px 80px; }
+      .header h1 { font-size: 1.6rem; }
+      .contact-card, details { padding: 24px; }
+      summary { padding: 16px 20px; }
+      details .answer { padding: 0 20px 16px; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+
+    <!-- ━━ Header ━━ -->
+    <header class="header">
+      <img class="app-icon" src="ScopeProofAppIcon.png" alt="ScopeProof icon">
+      <h1>ScopeProof</h1>
+      <p class="tagline">Signed change orders in under 60 seconds. Line items, signatures, PDFs.</p>
+    </header>
+
+    <!-- ━━ Contact ━━ -->
+    <section class="contact-card">
+      <h2>Get in Touch</h2>
+      <p>Have a question, found a bug, or want to request a feature? We typically respond within 24&nbsp;hours.</p>
+      <a class="email-link" href="mailto:forthemcreation@gmail.com">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        forthemcreation@gmail.com
+      </a>
+    </section>
+
+    <!-- ━━ FAQ ━━ -->
+    <section class="faq">
+      <h2>Frequently Asked Questions</h2>
+
+      <details>
+        <summary>What is ScopeProof?</summary>
+        <div class="answer">ScopeProof is a standalone iOS app for contractors who need to document and get paid for scope changes on the job. Build a change order with itemized line items, capture a customer signature on the spot or remotely, and generate a professional PDF &mdash; all in under a minute, offline, with no subscription.</div>
+      </details>
+
+      <details>
+        <summary>How do I create a change order?</summary>
+        <div class="answer">Tap the <strong>+</strong> button on the home screen. ScopeProof auto-fills a smart job name from your current location (street + date) to save typing. Add line items (description, quantity, unit price, unit), optionally attach photos as evidence, and tag customer details. Totals calculate automatically using your currency.</div>
+      </details>
+
+      <details>
+        <summary>How does signature capture work?</summary>
+        <div class="answer">When the job is done, hand your device to the customer. They review the change order and sign directly on the screen with a finger or Apple Pencil. The signature is saved as a crisp PNG and sealed with the order &mdash; together with the timestamp and, if enabled, GPS and device info.</div>
+      </details>
+
+      <details>
+        <summary>What is remote signing?</summary>
+        <div class="answer">Remote signing (Pro) lets customers sign a change order from anywhere. ScopeProof sends them a secure web link via email, SMS, or clipboard. They open it in their browser, review the order, and sign. The signature comes back to your app automatically via push notification. Change order data is encrypted end-to-end &mdash; the decryption key lives only in the URL you send, never on our servers.</div>
+      </details>
+
+      <details>
+        <summary>How is remote signing kept private and secure?</summary>
+        <div class="answer">
+          When you send a change order for remote signing, it's encrypted on your device with <strong>AES-256-GCM</strong> before anything leaves the device. Only the encrypted payload is uploaded to our backend (Firebase).
+          <ul style="margin: 10px 0 10px 20px;">
+            <li>The decryption key is never uploaded. It's embedded in the <strong>URL fragment</strong> (the part after <code>#</code>), which browsers never send to servers &mdash; so only you and your customer ever have it.</li>
+            <li>Signing requests <strong>automatically expire after 7 days</strong>. After that, the link stops working.</li>
+            <li>ScopeProof signs into Firebase <em>anonymously</em> &mdash; no account, no email, no identifier about you is sent.</li>
+            <li>Push notifications (Firebase Cloud Messaging) are used only to alert you when the customer views, signs, rejects, or lets the request expire.</li>
+          </ul>
+          Full details are in our <a href="https://hugolamarreftc.github.io/ScopeProof-legal/">privacy policy</a>.
+        </div>
+      </details>
+
+      <details>
+        <summary>What is Dispute-Proof mode?</summary>
+        <div class="answer">Dispute-Proof mode (Pro) cryptographically seals a signed change order with <strong>SHA-256 hashing</strong> and an <strong>HMAC-SHA256 signature</strong> generated with a device-local key. The hash covers line items, attached photos, the customer signature, GPS, and the signing timestamp. If anyone alters any of it later, verification will detect the tampering. You can re-verify any signed order at any time from the detail view.</div>
+      </details>
+
+      <details>
+        <summary>What is the evidence package?</summary>
+        <div class="answer">The evidence package (Pro) is a ZIP file you can export for any signed change order. It contains the original photos, the customer signature image, the signed PDF, a machine-readable proof manifest (SHA-256 hashes, GPS, timestamps), and a README explaining how anyone can independently verify the hashes using standard tools like <strong>shasum</strong>. Useful for legal disputes, insurance claims, or simply your own records.</div>
+      </details>
+
+      <details>
+        <summary>What are line item templates?</summary>
+        <div class="answer">Templates (Pro) let you save frequently used line items &mdash; with a description, unit, default price, and category (Plumbing, Electrical, etc.) &mdash; and reuse them across change orders. You can even attach a price multiplier for customer-specific markups. Templates track usage so your most-used items surface first.</div>
+      </details>
+
+      <details>
+        <summary>What are AI line item suggestions?</summary>
+        <div class="answer">Attach a photo to a change order and ScopeProof's on-device AI (using Apple's Vision framework) reads any visible text and suggests relevant line items across trades &mdash; plumbing, electrical, HVAC, carpentry, flooring, painting, roofing, and more. It works entirely on your device, with no cloud calls. Available on both Free and Pro tiers.</div>
+      </details>
+
+      <details>
+        <summary>What's included in Free vs Pro?</summary>
+        <div class="answer"><strong>Free</strong> includes up to 5 change orders at a time, 5 line items per order, 1 photo per order, up to 2 projects, in-person signature capture, and watermarked PDFs. <strong>Pro ($9.99 once)</strong> unlocks: unlimited change orders, remote signing (email / SMS / link), unlimited line items and photos, unlimited projects, Dispute-Proof mode, evidence ZIP export, line item templates, company logo + brand color + contractor signature on PDFs, watermark removal, and QuickBooks IIF + JSON exports. One purchase, forever &mdash; no subscription.</div>
+      </details>
+
+      <details>
+        <summary>Can I add my company branding?</summary>
+        <div class="answer">Yes (Pro). Upload your company logo, set a brand color, and add your contractor signature. Your branding appears on every PDF &mdash; header, accent lines, and the signature block at the bottom.</div>
+      </details>
+
+      <details>
+        <summary>What export formats are available?</summary>
+        <div class="answer">All tiers can export professional <strong>PDFs</strong> (US Letter, multi-page) and <strong>CSV</strong> summaries. Pro adds <strong>QuickBooks IIF</strong> files for accounting import, <strong>JSON</strong> exports of full change order history, and the <strong>evidence ZIP</strong> for Dispute-Proof orders. Share via email, Messages, AirDrop, or save to Files.</div>
+      </details>
+
+      <details>
+        <summary>Can I edit a change order after it's signed?</summary>
+        <div class="answer">No &mdash; signed change orders are intentionally immutable to preserve legal integrity. If something needs to change, use <strong>Duplicate as New Draft</strong> (starts fresh) or <strong>Create Revision</strong> (links to the original via a revision chain so the history stays clear). Both options are available from the detail view of a signed order.</div>
+      </details>
+
+      <details>
+        <summary>Does the app work offline?</summary>
+        <div class="answer">Yes. Change order creation, line items, photos, signature capture, PDF generation, CSV export, and integrity verification all work without a network connection. The only online features are <strong>remote signing</strong> (which requires a network to deliver the secure link and receive the returned signature) and App Store purchase validation.</div>
+      </details>
+
+      <details>
+        <summary>Does ScopeProof work with TradeSnap?</summary>
+        <div class="answer">ScopeProof and TradeSnap are companion apps from the same developer. <strong>ScopeProof</strong> handles signed change orders with line items and pricing. <strong>TradeSnap</strong> handles before/after photo documentation. They share design language but not data &mdash; each is standalone. Use both if your workflow needs both, or either one on its own.</div>
+      </details>
+
+      <details>
+        <summary>Is my data private?</summary>
+        <div class="answer">Yes. All change order data stays on your device by default. There are no analytics, tracking SDKs, or advertising frameworks, and no account is required. The only exception is remote signing (Pro): when you use it, the change order is uploaded in encrypted form to Firebase so the customer's web browser can fetch it &mdash; and the decryption key stays in the URL fragment you send them, so it never reaches our servers. See our <a href="https://hugolamarreftc.github.io/ScopeProof-legal/">privacy policy</a> for full details.</div>
+      </details>
+
+      <details>
+        <summary>The app crashed &mdash; what should I do?</summary>
+        <div class="answer">First, make sure you're running the latest version from the App Store. If the issue persists, please email us at <strong>forthemcreation@gmail.com</strong> with your device model and iOS version so we can investigate.</div>
+      </details>
+    </section>
+
+    <!-- ━━ Footer ━━ -->
+    <footer>
+      <p>&copy; 2026 ForThemCreation. All rights reserved. &middot; <a href="https://hugolamarreftc.github.io/ScopeProof-legal/">Privacy Policy</a></p>
+    </footer>
+
+  </div>
+</body>
+</html>
