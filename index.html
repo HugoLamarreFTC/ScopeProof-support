@@ -202,6 +202,13 @@
       summary { padding: 16px 20px; }
       details .answer { padding: 0 20px 16px; }
     }
+    /* ── Language nav ── */
+    .lang-nav { display: flex; flex-wrap: wrap; gap: 8px 14px; justify-content: center;
+      margin-bottom: 56px; padding-bottom: 24px; border-bottom: 1px solid var(--border); }
+    .lang-nav a { color: var(--accent); text-decoration: none; font-size: 0.9rem; font-weight: 500; }
+    .lang-nav a:hover { text-decoration: underline; }
+    .lang-section { scroll-margin-top: 24px; }
+    .lang-section + .lang-section { margin-top: 72px; padding-top: 56px; border-top: 1px solid var(--border); }
   </style>
 </head>
 
@@ -215,7 +222,21 @@
       <p class="tagline">Signed change orders in under 60 seconds. Line items, signatures, PDFs.</p>
     </header>
 
-    <!-- ━━ Contact ━━ -->
+    <nav class="lang-nav">
+      <a href="#en">English</a>
+      <a href="#fr">Français</a>
+      <a href="#es">Español</a>
+      <a href="#de">Deutsch</a>
+      <a href="#pt">Português</a>
+      <a href="#ja">日本語</a>
+      <a href="#pl">Polski</a>
+      <a href="#ru">Русский</a>
+      <a href="#id">Bahasa Indonesia</a>
+      <a href="#th">ไทย</a>
+    </nav>
+
+    <div id="en" class="lang-section">
+<!-- ━━ Contact ━━ -->
     <section class="contact-card">
       <h2>Get in Touch</h2>
       <p>Have a question, found a bug, or want to request a feature? We typically respond within 24&nbsp;hours.</p>
@@ -285,7 +306,7 @@
 
       <details>
         <summary>What's included in Free vs Pro?</summary>
-        <div class="answer"><strong>Free</strong> includes up to 5 change orders at a time, 5 line items per order, 1 photo per order, up to 2 projects, in-person signature capture, and watermarked PDFs. <strong>Pro ($9.99 once)</strong> unlocks: unlimited change orders, remote signing (email / SMS / link), unlimited line items and photos, unlimited projects, Dispute-Proof mode, evidence ZIP export, line item templates, company logo + brand color + contractor signature on PDFs, watermark removal, and QuickBooks IIF + JSON exports. One purchase, forever &mdash; no subscription.</div>
+        <div class="answer"><strong>Free</strong> includes up to 3 change orders at a time, 3 line items per order, 1 photo per order, up to 2 projects, in-person signature capture, and watermarked PDFs. <strong>Pro ($9.99 once)</strong> unlocks: unlimited change orders, remote signing (email / SMS / link), unlimited line items and photos, unlimited projects, Dispute-Proof mode, evidence ZIP export, line item templates, company logo + brand color + contractor signature on PDFs, watermark removal, and QuickBooks IIF + JSON exports. One purchase, forever &mdash; no subscription.</div>
       </details>
 
       <details>
@@ -323,6 +344,1006 @@
         <div class="answer">First, make sure you're running the latest version from the App Store. If the issue persists, please email us at <strong>forthemcreation@gmail.com</strong> with your device model and iOS version so we can investigate.</div>
       </details>
     </section>
+    </div>
+
+    <div id="fr" class="lang-section">
+<!-- ━━ Contact ━━ -->
+    <section class="contact-card">
+      <h2>Nous contacter</h2>
+      <p>Une question, un bug à signaler ou une fonctionnalité à demander&nbsp;? Nous répondons généralement sous 24&nbsp;heures.</p>
+      <a class="email-link" href="mailto:forthemcreation@gmail.com">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        forthemcreation@gmail.com
+      </a>
+    </section>
+
+    <!-- ━━ FAQ ━━ -->
+    <section class="faq">
+      <h2>Questions fréquentes</h2>
+
+      <details>
+        <summary>Qu'est-ce que ScopeProof&nbsp;?</summary>
+        <div class="answer">ScopeProof est une application iOS autonome pour les entrepreneurs qui doivent documenter et facturer les modifications de chantier. Créez un avenant avec des lignes détaillées, recueillez la signature du client sur place ou à distance, et générez un PDF professionnel &mdash; le tout en moins d'une minute, hors ligne, sans abonnement.</div>
+      </details>
+
+      <details>
+        <summary>Comment créer un avenant&nbsp;?</summary>
+        <div class="answer">Touchez le bouton <strong>+</strong> sur l'écran d'accueil. ScopeProof renseigne automatiquement un nom de chantier intelligent à partir de votre position actuelle (rue + date) pour vous éviter de taper. Ajoutez des lignes (description, quantité, prix unitaire, unité), joignez au besoin des photos comme preuves, et renseignez les coordonnées du client. Les totaux se calculent automatiquement dans votre devise.</div>
+      </details>
+
+      <details>
+        <summary>Comment fonctionne la signature&nbsp;?</summary>
+        <div class="answer">Une fois le travail terminé, tendez votre appareil au client. Il consulte l'avenant et signe directement à l'écran, au doigt ou à l'Apple Pencil. La signature est enregistrée en PNG net et scellée avec l'avenant &mdash; avec l'horodatage et, si activés, la position GPS et les infos de l'appareil.</div>
+      </details>
+
+      <details>
+        <summary>Qu'est-ce que la signature à distance&nbsp;?</summary>
+        <div class="answer">La signature à distance (Pro) permet à vos clients de signer un avenant où qu'ils soient. ScopeProof leur envoie un lien web sécurisé par e-mail, SMS ou presse-papiers. Ils l'ouvrent dans leur navigateur, consultent l'avenant et signent. La signature revient automatiquement dans votre application par notification push. Les données de l'avenant sont chiffrées de bout en bout &mdash; la clé de déchiffrement réside uniquement dans le lien que vous envoyez, jamais sur nos serveurs.</div>
+      </details>
+
+      <details>
+        <summary>Comment la signature à distance reste-t-elle privée et sécurisée&nbsp;?</summary>
+        <div class="answer">
+          Lorsque vous envoyez un avenant pour signature à distance, il est chiffré sur votre appareil avec <strong>AES-256-GCM</strong> avant que quoi que ce soit ne le quitte. Seules les données chiffrées sont téléversées vers notre backend (Firebase).
+          <ul style="margin: 10px 0 10px 20px;">
+            <li>La clé de déchiffrement n'est jamais téléversée. Elle est intégrée au <strong>fragment de l'URL</strong> (la partie après <code>#</code>), que les navigateurs n'envoient jamais aux serveurs &mdash; ainsi, vous seul et votre client la possédez.</li>
+            <li>Les demandes de signature <strong>expirent automatiquement au bout de 7 jours</strong>. Passé ce délai, le lien cesse de fonctionner.</li>
+            <li>ScopeProof se connecte à Firebase de façon <em>anonyme</em> &mdash; aucun compte, aucun e-mail, aucun identifiant vous concernant n'est transmis.</li>
+            <li>Les notifications push (Firebase Cloud Messaging) servent uniquement à vous prévenir lorsque le client consulte, signe, refuse l'avenant ou laisse la demande expirer.</li>
+          </ul>
+          Tous les détails figurent dans notre <a href="https://hugolamarreftc.github.io/ScopeProof-legal/">politique de confidentialité</a>.
+        </div>
+      </details>
+
+      <details>
+        <summary>Qu'est-ce que le mode Anti-litige&nbsp;?</summary>
+        <div class="answer">Le mode Anti-litige (Pro) scelle cryptographiquement un avenant signé à l'aide d'un <strong>hachage SHA-256</strong> et d'une <strong>signature HMAC-SHA256</strong> générée avec une clé locale à l'appareil. Le hachage couvre les lignes, les photos jointes, la signature du client, la position GPS et l'horodatage de signature. Si quelqu'un modifie l'un de ces éléments par la suite, la vérification détectera la falsification. Vous pouvez revérifier n'importe quel avenant signé à tout moment depuis la vue détaillée.</div>
+      </details>
+
+      <details>
+        <summary>Qu'est-ce que le dossier de preuves&nbsp;?</summary>
+        <div class="answer">Le dossier de preuves (Pro) est un fichier ZIP que vous pouvez exporter pour tout avenant signé. Il contient les photos originales, l'image de la signature du client, le PDF signé, un manifeste de preuve lisible par machine (hachages SHA-256, GPS, horodatages) et un fichier README expliquant comment n'importe qui peut vérifier les hachages de manière indépendante avec des outils standards comme <strong>shasum</strong>. Utile pour les litiges juridiques, les réclamations d'assurance ou simplement vos propres archives.</div>
+      </details>
+
+      <details>
+        <summary>Qu'est-ce que les modèles de lignes&nbsp;?</summary>
+        <div class="answer">Les modèles (Pro) vous permettent d'enregistrer les lignes que vous utilisez souvent &mdash; avec une description, une unité, un prix par défaut et une catégorie (Plomberie, Électricité, etc.) &mdash; et de les réutiliser d'un avenant à l'autre. Vous pouvez même associer un multiplicateur de prix pour des majorations propres à un client. Les modèles suivent leur utilisation, si bien que vos lignes les plus fréquentes apparaissent en premier.</div>
+      </details>
+
+      <details>
+        <summary>Qu'est-ce que les suggestions de lignes par l'IA&nbsp;?</summary>
+        <div class="answer">Joignez une photo à un avenant et l'IA embarquée de ScopeProof (avec le framework Vision d'Apple) lit le texte visible et suggère des lignes pertinentes pour tous les corps de métier &mdash; plomberie, électricité, CVC, charpenterie, revêtements de sol, peinture, toiture et plus encore. Tout se passe entièrement sur votre appareil, sans aucun appel au cloud. Disponible dans les versions Gratuite et Pro.</div>
+      </details>
+
+      <details>
+        <summary>Que comprennent les versions Gratuite et Pro&nbsp;?</summary>
+        <div class="answer">La version <strong>Gratuite</strong> inclut jusqu'à 3 avenants à la fois, 3 lignes par avenant, 1 photo par avenant, jusqu'à 2 projets, la signature en personne et des PDF avec filigrane. La version <strong>Pro (9,99 $ une seule fois)</strong> débloque&nbsp;: les avenants illimités, la signature à distance (e-mail / SMS / lien), les lignes et photos illimitées, les projets illimités, le mode Anti-litige, l'export du ZIP de preuves, les modèles de lignes, le logo de l'entreprise + la couleur de marque + la signature de l'entrepreneur sur les PDF, la suppression du filigrane et les exports QuickBooks IIF + JSON. Un seul achat, pour toujours &mdash; sans abonnement.</div>
+      </details>
+
+      <details>
+        <summary>Puis-je ajouter l'image de marque de mon entreprise&nbsp;?</summary>
+        <div class="answer">Oui (Pro). Téléversez le logo de votre entreprise, choisissez une couleur de marque et ajoutez votre signature d'entrepreneur. Votre image de marque apparaît sur chaque PDF &mdash; en-tête, lignes d'accentuation et bloc de signature en bas de page.</div>
+      </details>
+
+      <details>
+        <summary>Quels formats d'export sont disponibles&nbsp;?</summary>
+        <div class="answer">Toutes les versions peuvent exporter des <strong>PDF</strong> professionnels (format US Letter, multipage) et des récapitulatifs <strong>CSV</strong>. La version Pro ajoute les fichiers <strong>QuickBooks IIF</strong> pour l'import comptable, les exports <strong>JSON</strong> de l'historique complet des avenants et le <strong>ZIP de preuves</strong> pour les avenants en mode Anti-litige. Partagez par e-mail, Messages, AirDrop, ou enregistrez dans Fichiers.</div>
+      </details>
+
+      <details>
+        <summary>Puis-je modifier un avenant après sa signature&nbsp;?</summary>
+        <div class="answer">Non &mdash; les avenants signés sont volontairement immuables afin de préserver leur valeur juridique. Si quelque chose doit changer, utilisez <strong>Dupliquer en nouveau brouillon</strong> (repart de zéro) ou <strong>Créer une révision</strong> (relie à l'original via une chaîne de révisions pour que l'historique reste clair). Ces deux options sont accessibles depuis la vue détaillée d'un avenant signé.</div>
+      </details>
+
+      <details>
+        <summary>L'application fonctionne-t-elle hors ligne&nbsp;?</summary>
+        <div class="answer">Oui. La création d'avenants, les lignes, les photos, la signature, la génération de PDF, l'export CSV et la vérification d'intégrité fonctionnent tous sans connexion réseau. Les seules fonctionnalités en ligne sont la <strong>signature à distance</strong> (qui nécessite un réseau pour transmettre le lien sécurisé et recevoir la signature retournée) et la validation des achats sur l'App Store.</div>
+      </details>
+
+      <details>
+        <summary>ScopeProof fonctionne-t-il avec TradeSnap&nbsp;?</summary>
+        <div class="answer">ScopeProof et TradeSnap sont des applications complémentaires du même développeur. <strong>ScopeProof</strong> gère les avenants signés avec lignes et tarifs. <strong>TradeSnap</strong> gère la documentation photo avant/après. Elles partagent le même langage visuel mais pas les données &mdash; chacune est autonome. Utilisez les deux si votre flux de travail le demande, ou l'une ou l'autre séparément.</div>
+      </details>
+
+      <details>
+        <summary>Mes données sont-elles privées&nbsp;?</summary>
+        <div class="answer">Oui. Toutes vos données d'avenants &mdash; avenants, coordonnées clients, photos et signatures &mdash; restent sur votre appareil et ne sont jamais collectées. Avec votre autorisation, ScopeProof partage des statistiques d'utilisation anonymes et des rapports de plantage (via Google Firebase) afin que nous puissions corriger les bugs et améliorer l'application&nbsp;; c'est sur consentement préalable dans l'UE, au Royaume-Uni et en Suisse, activé par défaut ailleurs, et désactivable à tout moment dans <strong>Réglages &rsaquo; Données et confidentialité</strong>. Aucune publicité, aucun suivi entre applications, aucun compte requis. La seule autre occasion où des données quittent votre appareil est la signature à distance (Pro)&nbsp;: l'avenant est téléversé sous forme chiffrée vers Firebase pour que le navigateur web du client puisse le récupérer &mdash; et la clé de déchiffrement reste dans le fragment de l'URL que vous lui envoyez, de sorte qu'elle n'atteint jamais nos serveurs. Consultez notre <a href="https://hugolamarreftc.github.io/ScopeProof-legal/">politique de confidentialité</a> pour tous les détails.</div>
+      </details>
+
+      <details>
+        <summary>L'application a planté &mdash; que faire&nbsp;?</summary>
+        <div class="answer">Tout d'abord, assurez-vous d'utiliser la dernière version disponible sur l'App Store. Si le problème persiste, écrivez-nous à <strong>forthemcreation@gmail.com</strong> en précisant le modèle de votre appareil et la version d'iOS, afin que nous puissions enquêter.</div>
+      </details>
+    </section>
+    </div>
+
+    <div id="es" class="lang-section">
+<!-- ━━ Contact ━━ -->
+    <section class="contact-card">
+      <h2>Contáctanos</h2>
+      <p>¿Tienes una pregunta, encontraste un error o quieres solicitar una función? Normalmente respondemos en menos de 24&nbsp;horas.</p>
+      <a class="email-link" href="mailto:forthemcreation@gmail.com">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        forthemcreation@gmail.com
+      </a>
+    </section>
+
+    <!-- ━━ FAQ ━━ -->
+    <section class="faq">
+      <h2>Preguntas frecuentes</h2>
+
+      <details>
+        <summary>¿Qué es ScopeProof?</summary>
+        <div class="answer">ScopeProof es una app independiente para iOS pensada para contratistas que necesitan documentar y cobrar los cambios de alcance en la obra. Arma una orden de cambio con partidas detalladas, captura la firma del cliente en el momento o de forma remota, y genera un PDF profesional &mdash; todo en menos de un minuto, sin conexión y sin suscripción.</div>
+      </details>
+
+      <details>
+        <summary>¿Cómo creo una orden de cambio?</summary>
+        <div class="answer">Toca el botón <strong>+</strong> en la pantalla de inicio. ScopeProof completa automáticamente un nombre de trabajo inteligente según tu ubicación actual (calle + fecha) para que escribas menos. Agrega partidas (descripción, cantidad, precio unitario, unidad), adjunta fotos como evidencia si quieres y registra los datos del cliente. Los totales se calculan automáticamente en tu moneda.</div>
+      </details>
+
+      <details>
+        <summary>¿Cómo funciona la captura de firma?</summary>
+        <div class="answer">Cuando el trabajo está terminado, pásale el dispositivo al cliente. Revisa la orden de cambio y firma directamente en la pantalla con el dedo o con el Apple Pencil. La firma se guarda como un PNG nítido y queda sellada junto con la orden &mdash; con la fecha y hora y, si está activado, la ubicación GPS y los datos del dispositivo.</div>
+      </details>
+
+      <details>
+        <summary>¿Qué es la firma remota?</summary>
+        <div class="answer">La firma remota (Pro) permite que los clientes firmen una orden de cambio desde cualquier lugar. ScopeProof les envía un enlace web seguro por correo, SMS o portapapeles. Lo abren en su navegador, revisan la orden y firman. La firma vuelve a tu app automáticamente mediante una notificación push. Los datos de la orden de cambio se cifran de extremo a extremo &mdash; la clave de descifrado vive únicamente en el enlace que envías, nunca en nuestros servidores.</div>
+      </details>
+
+      <details>
+        <summary>¿Cómo se mantiene privada y segura la firma remota?</summary>
+        <div class="answer">
+          Cuando envías una orden de cambio para firma remota, se cifra en tu dispositivo con <strong>AES-256-GCM</strong> antes de que nada salga de él. Solo el contenido cifrado se sube a nuestro backend (Firebase).
+          <ul style="margin: 10px 0 10px 20px;">
+            <li>La clave de descifrado nunca se sube. Va incrustada en el <strong>fragmento de la URL</strong> (la parte después del <code>#</code>), que los navegadores nunca envían a los servidores &mdash; así que solo tú y tu cliente la tienen.</li>
+            <li>Las solicitudes de firma <strong>caducan automáticamente a los 7 días</strong>. Después de eso, el enlace deja de funcionar.</li>
+            <li>ScopeProof inicia sesión en Firebase de forma <em>anónima</em> &mdash; sin cuenta, sin correo y sin enviar ningún identificador tuyo.</li>
+            <li>Las notificaciones push (Firebase Cloud Messaging) se usan solo para avisarte cuando el cliente ve, firma, rechaza o deja que la solicitud caduque.</li>
+          </ul>
+          Encontrarás todos los detalles en nuestra <a href="https://hugolamarreftc.github.io/ScopeProof-legal/">política de privacidad</a>.
+        </div>
+      </details>
+
+      <details>
+        <summary>¿Qué es el modo a prueba de disputas?</summary>
+        <div class="answer">El modo a prueba de disputas (Pro) sella criptográficamente una orden de cambio firmada con <strong>hash SHA-256</strong> y una <strong>firma HMAC-SHA256</strong> generada con una clave local del dispositivo. El hash cubre las partidas, las fotos adjuntas, la firma del cliente, el GPS y la fecha y hora de la firma. Si alguien altera cualquier dato más adelante, la verificación detectará la manipulación. Puedes volver a verificar cualquier orden firmada en cualquier momento desde la vista de detalle.</div>
+      </details>
+
+      <details>
+        <summary>¿Qué es el paquete de evidencia?</summary>
+        <div class="answer">El paquete de evidencia (Pro) es un archivo ZIP que puedes exportar para cualquier orden de cambio firmada. Contiene las fotos originales, la imagen de la firma del cliente, el PDF firmado, un manifiesto de prueba legible por máquina (hashes SHA-256, GPS, fechas y horas) y un README que explica cómo cualquier persona puede verificar los hashes de forma independiente con herramientas estándar como <strong>shasum</strong>. Útil para disputas legales, reclamaciones de seguros o simplemente para tus propios registros.</div>
+      </details>
+
+      <details>
+        <summary>¿Qué son las plantillas de partidas?</summary>
+        <div class="answer">Las plantillas (Pro) te permiten guardar partidas que usas con frecuencia &mdash; con descripción, unidad, precio predeterminado y categoría (Plomería, Electricidad, etc.) &mdash; y reutilizarlas en distintas órdenes de cambio. Incluso puedes asignar un multiplicador de precio para recargos específicos por cliente. Las plantillas registran el uso, así que las partidas que más utilizas aparecen primero.</div>
+      </details>
+
+      <details>
+        <summary>¿Qué son las sugerencias de partidas con IA?</summary>
+        <div class="answer">Adjunta una foto a una orden de cambio y la IA en el propio dispositivo de ScopeProof (con el framework Vision de Apple) lee cualquier texto visible y sugiere partidas relevantes de varios oficios &mdash; plomería, electricidad, climatización, carpintería, pisos, pintura, techos y más. Funciona por completo en tu dispositivo, sin llamadas a la nube. Disponible tanto en la versión gratuita como en la Pro.</div>
+      </details>
+
+      <details>
+        <summary>¿Qué incluye la versión gratuita frente a la Pro?</summary>
+        <div class="answer">La versión <strong>gratuita</strong> incluye hasta 3 órdenes de cambio a la vez, 3 partidas por orden, 1 foto por orden, hasta 2 proyectos, captura de firma en persona y PDFs con marca de agua. <strong>Pro ($9.99 una sola vez)</strong> desbloquea: órdenes de cambio ilimitadas, firma remota (correo / SMS / enlace), partidas y fotos ilimitadas, proyectos ilimitados, modo a prueba de disputas, exportación del ZIP de evidencia, plantillas de partidas, logotipo de la empresa + color de marca + firma del contratista en los PDFs, eliminación de la marca de agua y exportaciones a QuickBooks IIF + JSON. Una sola compra, para siempre &mdash; sin suscripción.</div>
+      </details>
+
+      <details>
+        <summary>¿Puedo añadir la imagen de marca de mi empresa?</summary>
+        <div class="answer">Sí (Pro). Sube el logotipo de tu empresa, define un color de marca y agrega tu firma de contratista. Tu imagen de marca aparece en cada PDF &mdash; en el encabezado, las líneas de acento y el bloque de firma al final.</div>
+      </details>
+
+      <details>
+        <summary>¿Qué formatos de exportación están disponibles?</summary>
+        <div class="answer">Todas las versiones pueden exportar <strong>PDFs</strong> profesionales (tamaño carta, varias páginas) y resúmenes en <strong>CSV</strong>. Pro añade archivos <strong>QuickBooks IIF</strong> para importar a la contabilidad, exportaciones en <strong>JSON</strong> del historial completo de órdenes de cambio y el <strong>ZIP de evidencia</strong> para las órdenes a prueba de disputas. Comparte por correo, Mensajes, AirDrop o guarda en Archivos.</div>
+      </details>
+
+      <details>
+        <summary>¿Puedo editar una orden de cambio después de firmada?</summary>
+        <div class="answer">No &mdash; las órdenes de cambio firmadas son intencionalmente inmutables para preservar su integridad legal. Si algo necesita cambiar, usa <strong>Duplicar como nuevo borrador</strong> (empieza de cero) o <strong>Crear revisión</strong> (la vincula con la original mediante una cadena de revisiones para que el historial quede claro). Ambas opciones están disponibles desde la vista de detalle de una orden firmada.</div>
+      </details>
+
+      <details>
+        <summary>¿La app funciona sin conexión?</summary>
+        <div class="answer">Sí. La creación de órdenes de cambio, las partidas, las fotos, la captura de firma, la generación de PDF, la exportación a CSV y la verificación de integridad funcionan todas sin conexión a internet. Las únicas funciones que requieren conexión son la <strong>firma remota</strong> (que necesita red para entregar el enlace seguro y recibir la firma de vuelta) y la validación de la compra en la App Store.</div>
+      </details>
+
+      <details>
+        <summary>¿ScopeProof funciona con TradeSnap?</summary>
+        <div class="answer">ScopeProof y TradeSnap son apps complementarias del mismo desarrollador. <strong>ScopeProof</strong> se encarga de las órdenes de cambio firmadas con partidas y precios. <strong>TradeSnap</strong> se encarga de la documentación con fotos de antes y después. Comparten el lenguaje de diseño pero no los datos &mdash; cada una es independiente. Usa ambas si tu flujo de trabajo lo necesita, o cualquiera de ellas por separado.</div>
+      </details>
+
+      <details>
+        <summary>¿Mis datos son privados?</summary>
+        <div class="answer">Sí. Todos los datos de tus órdenes de cambio &mdash; órdenes, datos de clientes, fotos y firmas &mdash; permanecen en tu dispositivo y nunca se recopilan. Con tu permiso, ScopeProof comparte estadísticas de uso anónimas e informes de fallos (mediante Google Firebase) para que podamos corregir errores y mejorar la app; esto es opcional y debe activarse en la UE, el Reino Unido y Suiza, está activado de forma predeterminada en el resto de lugares y se puede desactivar en cualquier momento en <strong>Ajustes &rsaquo; Datos y privacidad</strong>. No hay publicidad, ni seguimiento entre apps, ni se requiere cuenta. La otra vez que los datos salen de tu dispositivo es con la firma remota (Pro): la orden de cambio se sube cifrada a Firebase para que el navegador web del cliente pueda obtenerla &mdash; y la clave de descifrado se queda en el fragmento de la URL que le envías, así que nunca llega a nuestros servidores. Consulta nuestra <a href="https://hugolamarreftc.github.io/ScopeProof-legal/">política de privacidad</a> para conocer todos los detalles.</div>
+      </details>
+
+      <details>
+        <summary>La app se cerró inesperadamente &mdash; ¿qué debo hacer?</summary>
+        <div class="answer">Primero, asegúrate de tener la última versión de la App Store. Si el problema persiste, escríbenos a <strong>forthemcreation@gmail.com</strong> indicando el modelo de tu dispositivo y la versión de iOS para que podamos investigarlo.</div>
+      </details>
+    </section>
+    </div>
+
+    <div id="de" class="lang-section">
+<!-- ━━ Contact ━━ -->
+    <section class="contact-card">
+      <h2>Kontakt aufnehmen</h2>
+      <p>Sie haben eine Frage, einen Fehler gefunden oder möchten eine Funktion vorschlagen? In der Regel antworten wir innerhalb von 24&nbsp;Stunden.</p>
+      <a class="email-link" href="mailto:forthemcreation@gmail.com">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        forthemcreation@gmail.com
+      </a>
+    </section>
+
+    <!-- ━━ FAQ ━━ -->
+    <section class="faq">
+      <h2>Häufig gestellte Fragen</h2>
+
+      <details>
+        <summary>Was ist ScopeProof?</summary>
+        <div class="answer">ScopeProof ist eine eigenständige iOS-App für Handwerker und Bauunternehmer, die Leistungsänderungen direkt auf der Baustelle dokumentieren und abrechnen müssen. Erstellen Sie einen Nachtrag mit detaillierten Positionen, holen Sie die Unterschrift des Kunden vor Ort oder aus der Ferne ein und erzeugen Sie ein professionelles PDF &mdash; alles in unter einer Minute, offline und ohne Abo.</div>
+      </details>
+
+      <details>
+        <summary>Wie erstelle ich einen Nachtrag?</summary>
+        <div class="answer">Tippen Sie auf die Schaltfläche <strong>+</strong> auf dem Startbildschirm. ScopeProof trägt automatisch einen passenden Auftragsnamen anhand Ihres aktuellen Standorts ein (Straße + Datum), damit Sie weniger tippen müssen. Fügen Sie Positionen hinzu (Beschreibung, Menge, Einzelpreis, Einheit), hängen Sie bei Bedarf Fotos als Nachweis an und erfassen Sie die Kundendaten. Die Summen werden automatisch in Ihrer Währung berechnet.</div>
+      </details>
+
+      <details>
+        <summary>Wie funktioniert die Unterschriftserfassung?</summary>
+        <div class="answer">Wenn die Arbeit erledigt ist, reichen Sie Ihrem Kunden das Gerät. Er prüft den Nachtrag und unterschreibt direkt auf dem Bildschirm &mdash; mit dem Finger oder dem Apple Pencil. Die Unterschrift wird als gestochen scharfes PNG gespeichert und fest mit dem Nachtrag verknüpft &mdash; zusammen mit dem Zeitstempel und, falls aktiviert, GPS- und Geräteinformationen.</div>
+      </details>
+
+      <details>
+        <summary>Was ist die Fernunterschrift?</summary>
+        <div class="answer">Mit der Fernunterschrift (Pro) können Kunden einen Nachtrag von überall aus unterschreiben. ScopeProof sendet ihnen per E-Mail, SMS oder über die Zwischenablage einen sicheren Weblink. Sie öffnen ihn im Browser, prüfen den Nachtrag und unterschreiben. Die Unterschrift gelangt automatisch per Push-Benachrichtigung zurück in Ihre App. Die Nachtragsdaten sind Ende-zu-Ende verschlüsselt &mdash; der Entschlüsselungsschlüssel steckt ausschließlich in der von Ihnen versendeten URL und liegt nie auf unseren Servern.</div>
+      </details>
+
+      <details>
+        <summary>Wie wird die Fernunterschrift privat und sicher gehalten?</summary>
+        <div class="answer">
+          Wenn Sie einen Nachtrag zur Fernunterschrift versenden, wird er auf Ihrem Gerät mit <strong>AES-256-GCM</strong> verschlüsselt, bevor irgendetwas das Gerät verlässt. Nur die verschlüsselten Daten werden auf unser Backend (Firebase) hochgeladen.
+          <ul style="margin: 10px 0 10px 20px;">
+            <li>Der Entschlüsselungsschlüssel wird niemals hochgeladen. Er ist im <strong>URL-Fragment</strong> eingebettet (dem Teil nach dem <code>#</code>), das Browser niemals an Server senden &mdash; so haben nur Sie und Ihr Kunde ihn.</li>
+            <li>Unterschriftsanfragen <strong>laufen automatisch nach 7 Tagen ab</strong>. Danach funktioniert der Link nicht mehr.</li>
+            <li>ScopeProof meldet sich <em>anonym</em> bei Firebase an &mdash; kein Konto, keine E-Mail, keine Kennung über Sie wird übermittelt.</li>
+            <li>Push-Benachrichtigungen (Firebase Cloud Messaging) werden nur dazu verwendet, Sie zu informieren, wenn der Kunde den Nachtrag ansieht, unterschreibt, ablehnt oder die Anfrage ablaufen lässt.</li>
+          </ul>
+          Alle Einzelheiten finden Sie in unserer <a href="https://hugolamarreftc.github.io/ScopeProof-legal/">Datenschutzerklärung</a>.
+        </div>
+      </details>
+
+      <details>
+        <summary>Was ist der Dispute-Proof-Modus?</summary>
+        <div class="answer">Der Dispute-Proof-Modus (Pro) versiegelt einen unterschriebenen Nachtrag kryptografisch mit <strong>SHA-256-Hashing</strong> und einer <strong>HMAC-SHA256-Signatur</strong>, die mit einem gerätelokalen Schlüssel erzeugt wird. Der Hash umfasst die Positionen, angehängte Fotos, die Kundenunterschrift, GPS und den Zeitstempel der Unterschrift. Wenn jemand später etwas davon verändert, erkennt die Prüfung die Manipulation. Sie können jeden unterschriebenen Nachtrag jederzeit über die Detailansicht erneut überprüfen.</div>
+      </details>
+
+      <details>
+        <summary>Was ist das Beweispaket?</summary>
+        <div class="answer">Das Beweispaket (Pro) ist eine ZIP-Datei, die Sie für jeden unterschriebenen Nachtrag exportieren können. Es enthält die Originalfotos, das Bild der Kundenunterschrift, das unterschriebene PDF, ein maschinenlesbares Beweis-Manifest (SHA-256-Hashes, GPS, Zeitstempel) sowie eine README-Datei, die erklärt, wie jeder die Hashes mit Standardwerkzeugen wie <strong>shasum</strong> unabhängig überprüfen kann. Nützlich bei Rechtsstreitigkeiten, Versicherungsfällen oder einfach für Ihre eigenen Unterlagen.</div>
+      </details>
+
+      <details>
+        <summary>Was sind Positionsvorlagen?</summary>
+        <div class="answer">Vorlagen (Pro) ermöglichen es Ihnen, häufig verwendete Positionen zu speichern &mdash; mit Beschreibung, Einheit, Standardpreis und Kategorie (Sanitär, Elektrik usw.) &mdash; und sie über mehrere Nachträge hinweg wiederzuverwenden. Sie können sogar einen Preisfaktor für kundenspezifische Aufschläge hinterlegen. Vorlagen erfassen die Nutzung, sodass Ihre meistgenutzten Positionen zuerst erscheinen.</div>
+      </details>
+
+      <details>
+        <summary>Was sind KI-Positionsvorschläge?</summary>
+        <div class="answer">Hängen Sie ein Foto an einen Nachtrag an, und die geräteinterne KI von ScopeProof (mit Apples Vision-Framework) liest jeglichen sichtbaren Text aus und schlägt passende Positionen für verschiedene Gewerke vor &mdash; Sanitär, Elektrik, HLK, Tischlerei, Bodenbeläge, Malerarbeiten, Dacharbeiten und mehr. Es läuft vollständig auf Ihrem Gerät, ohne Cloud-Aufrufe. Verfügbar sowohl in der Gratis- als auch in der Pro-Version.</div>
+      </details>
+
+      <details>
+        <summary>Was ist in Gratis im Vergleich zu Pro enthalten?</summary>
+        <div class="answer"><strong>Gratis</strong> umfasst bis zu 3 Nachträge gleichzeitig, 3 Positionen pro Nachtrag, 1 Foto pro Nachtrag, bis zu 2 Projekte, die Unterschriftserfassung vor Ort sowie PDFs mit Wasserzeichen. <strong>Pro (einmalig 9,99 $)</strong> schaltet frei: unbegrenzte Nachträge, Fernunterschrift (E-Mail / SMS / Link), unbegrenzte Positionen und Fotos, unbegrenzte Projekte, den Dispute-Proof-Modus, den Beweis-ZIP-Export, Positionsvorlagen, Firmenlogo + Markenfarbe + Auftragnehmerunterschrift auf PDFs, die Entfernung des Wasserzeichens sowie QuickBooks-IIF- und JSON-Exporte. Ein Kauf, für immer &mdash; kein Abo.</div>
+      </details>
+
+      <details>
+        <summary>Kann ich mein Firmenbranding hinzufügen?</summary>
+        <div class="answer">Ja (Pro). Laden Sie Ihr Firmenlogo hoch, legen Sie eine Markenfarbe fest und fügen Sie Ihre Auftragnehmerunterschrift hinzu. Ihr Branding erscheint auf jedem PDF &mdash; in der Kopfzeile, in den Akzentlinien und im Unterschriftsblock am unteren Rand.</div>
+      </details>
+
+      <details>
+        <summary>Welche Exportformate sind verfügbar?</summary>
+        <div class="answer">Alle Versionen können professionelle <strong>PDFs</strong> (US-Letter, mehrseitig) und <strong>CSV</strong>-Zusammenfassungen exportieren. Pro ergänzt <strong>QuickBooks-IIF</strong>-Dateien für den Buchhaltungsimport, <strong>JSON</strong>-Exporte der vollständigen Nachtragshistorie sowie das <strong>Beweis-ZIP</strong> für Dispute-Proof-Nachträge. Teilen Sie per E-Mail, Nachrichten, AirDrop oder speichern Sie in Dateien.</div>
+      </details>
+
+      <details>
+        <summary>Kann ich einen Nachtrag nach der Unterschrift bearbeiten?</summary>
+        <div class="answer">Nein &mdash; unterschriebene Nachträge sind bewusst unveränderlich, um die rechtliche Integrität zu wahren. Wenn etwas geändert werden muss, verwenden Sie <strong>Als neuen Entwurf duplizieren</strong> (beginnt neu) oder <strong>Revision erstellen</strong> (verknüpft über eine Revisionskette mit dem Original, damit der Verlauf nachvollziehbar bleibt). Beide Optionen sind über die Detailansicht eines unterschriebenen Nachtrags verfügbar.</div>
+      </details>
+
+      <details>
+        <summary>Funktioniert die App offline?</summary>
+        <div class="answer">Ja. Das Erstellen von Nachträgen, Positionen, Fotos, die Unterschriftserfassung, die PDF-Erzeugung, der CSV-Export und die Integritätsprüfung funktionieren alle ohne Netzwerkverbindung. Die einzigen Online-Funktionen sind die <strong>Fernunterschrift</strong> (die ein Netzwerk benötigt, um den sicheren Link zuzustellen und die zurückgesendete Unterschrift zu empfangen) sowie die Kaufprüfung über den App Store.</div>
+      </details>
+
+      <details>
+        <summary>Funktioniert ScopeProof mit TradeSnap?</summary>
+        <div class="answer">ScopeProof und TradeSnap sind Begleit-Apps desselben Entwicklers. <strong>ScopeProof</strong> kümmert sich um unterschriebene Nachträge mit Positionen und Preisen. <strong>TradeSnap</strong> kümmert sich um die Vorher-Nachher-Fotodokumentation. Sie teilen sich die Designsprache, aber keine Daten &mdash; jede ist eigenständig. Nutzen Sie beide, wenn Ihr Arbeitsablauf beide benötigt, oder jeweils eine für sich.</div>
+      </details>
+
+      <details>
+        <summary>Sind meine Daten privat?</summary>
+        <div class="answer">Ja. Alle Ihre Nachtragsdaten &mdash; Nachträge, Kundendaten, Fotos und Unterschriften &mdash; bleiben auf Ihrem Gerät und werden niemals erhoben. Mit Ihrer Erlaubnis teilt ScopeProof anonyme Nutzungsanalysen und Absturzberichte (über Google Firebase), damit wir Fehler beheben und die App verbessern können; dies ist in der EU, im Vereinigten Königreich und in der Schweiz Opt-in, anderswo standardmäßig aktiviert und kann jederzeit unter <strong>Einstellungen &rsaquo; Daten &amp; Datenschutz</strong> deaktiviert werden. Es gibt keine Werbung, kein app-übergreifendes Tracking und es ist kein Konto erforderlich. Das einzige weitere Mal, dass Daten Ihr Gerät verlassen, ist die Fernunterschrift (Pro): Der Nachtrag wird in verschlüsselter Form auf Firebase hochgeladen, damit der Webbrowser des Kunden ihn abrufen kann &mdash; und der Entschlüsselungsschlüssel bleibt im URL-Fragment, das Sie ihm senden, sodass er nie unsere Server erreicht. Vollständige Einzelheiten finden Sie in unserer <a href="https://hugolamarreftc.github.io/ScopeProof-legal/">Datenschutzerklärung</a>.</div>
+      </details>
+
+      <details>
+        <summary>Die App ist abgestürzt &mdash; was soll ich tun?</summary>
+        <div class="answer">Stellen Sie zunächst sicher, dass Sie die neueste Version aus dem App Store verwenden. Falls das Problem weiterhin besteht, schreiben Sie uns bitte eine E-Mail an <strong>forthemcreation@gmail.com</strong> mit Ihrem Gerätemodell und Ihrer iOS-Version, damit wir der Sache nachgehen können.</div>
+      </details>
+    </section>
+    </div>
+
+    <div id="pt" class="lang-section">
+<!-- ━━ Contact ━━ -->
+    <section class="contact-card">
+      <h2>Fale Conosco</h2>
+      <p>Tem alguma dúvida, encontrou um problema ou quer sugerir um recurso? Normalmente respondemos em até 24&nbsp;horas.</p>
+      <a class="email-link" href="mailto:forthemcreation@gmail.com">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        forthemcreation@gmail.com
+      </a>
+    </section>
+
+    <!-- ━━ FAQ ━━ -->
+    <section class="faq">
+      <h2>Perguntas Frequentes</h2>
+
+      <details>
+        <summary>O que é o ScopeProof?</summary>
+        <div class="answer">O ScopeProof é um aplicativo iOS independente para empreiteiros que precisam documentar e receber por mudanças de escopo na obra. Monte uma ordem de mudança com itens detalhados, colha a assinatura do cliente na hora ou à distância e gere um PDF profissional &mdash; tudo em menos de um minuto, offline e sem assinatura mensal.</div>
+      </details>
+
+      <details>
+        <summary>Como crio uma ordem de mudança?</summary>
+        <div class="answer">Toque no botão <strong>+</strong> na tela inicial. O ScopeProof preenche automaticamente um nome de serviço inteligente a partir da sua localização atual (rua + data) para você digitar menos. Adicione os itens (descrição, quantidade, preço unitário, unidade), anexe fotos como comprovação, se quiser, e informe os dados do cliente. Os totais são calculados automaticamente na sua moeda.</div>
+      </details>
+
+      <details>
+        <summary>Como funciona a captura de assinatura?</summary>
+        <div class="answer">Quando o serviço estiver concluído, entregue o aparelho ao cliente. Ele revisa a ordem de mudança e assina diretamente na tela com o dedo ou com o Apple Pencil. A assinatura é salva como um PNG nítido e selada junto com a ordem &mdash; com data e hora e, se ativado, localização GPS e informações do dispositivo.</div>
+      </details>
+
+      <details>
+        <summary>O que é a assinatura remota?</summary>
+        <div class="answer">A assinatura remota (Pro) permite que os clientes assinem uma ordem de mudança de qualquer lugar. O ScopeProof envia a eles um link web seguro por e-mail, SMS ou área de transferência. O cliente abre o link no navegador, revisa a ordem e assina. A assinatura volta automaticamente para o seu aplicativo por meio de uma notificação push. Os dados da ordem de mudança são criptografados de ponta a ponta &mdash; a chave de descriptografia fica apenas na URL que você envia, nunca em nossos servidores.</div>
+      </details>
+
+      <details>
+        <summary>Como a assinatura remota é mantida privada e segura?</summary>
+        <div class="answer">
+          Quando você envia uma ordem de mudança para assinatura remota, ela é criptografada no seu dispositivo com <strong>AES-256-GCM</strong> antes que qualquer coisa saia dele. Somente o conteúdo criptografado é enviado para o nosso servidor (Firebase).
+          <ul style="margin: 10px 0 10px 20px;">
+            <li>A chave de descriptografia nunca é enviada. Ela fica embutida no <strong>fragmento da URL</strong> (a parte depois do <code>#</code>), que os navegadores nunca transmitem aos servidores &mdash; então só você e o seu cliente a possuem.</li>
+            <li>As solicitações de assinatura <strong>expiram automaticamente após 7 dias</strong>. Depois disso, o link deixa de funcionar.</li>
+            <li>O ScopeProof faz login no Firebase de forma <em>anônima</em> &mdash; sem conta, sem e-mail, sem nenhum identificador seu sendo enviado.</li>
+            <li>As notificações push (Firebase Cloud Messaging) são usadas apenas para avisar você quando o cliente visualiza, assina, recusa ou deixa a solicitação expirar.</li>
+          </ul>
+          Os detalhes completos estão na nossa <a href="https://hugolamarreftc.github.io/ScopeProof-legal/">política de privacidade</a>.
+        </div>
+      </details>
+
+      <details>
+        <summary>O que é o modo À Prova de Disputa?</summary>
+        <div class="answer">O modo À Prova de Disputa (Pro) sela criptograficamente uma ordem de mudança assinada com <strong>hash SHA-256</strong> e uma <strong>assinatura HMAC-SHA256</strong> gerada com uma chave local do dispositivo. O hash abrange os itens, as fotos anexadas, a assinatura do cliente, o GPS e a data e hora da assinatura. Se alguém alterar qualquer parte disso depois, a verificação detectará a adulteração. Você pode reverificar qualquer ordem assinada a qualquer momento na tela de detalhes.</div>
+      </details>
+
+      <details>
+        <summary>O que é o pacote de evidências?</summary>
+        <div class="answer">O pacote de evidências (Pro) é um arquivo ZIP que você pode exportar para qualquer ordem de mudança assinada. Ele contém as fotos originais, a imagem da assinatura do cliente, o PDF assinado, um manifesto de comprovação legível por máquina (hashes SHA-256, GPS, datas e horas) e um README explicando como qualquer pessoa pode verificar os hashes de forma independente usando ferramentas padrão como o <strong>shasum</strong>. Útil para disputas judiciais, sinistros de seguro ou simplesmente para os seus próprios registros.</div>
+      </details>
+
+      <details>
+        <summary>O que são os modelos de itens?</summary>
+        <div class="answer">Os modelos (Pro) permitem salvar itens usados com frequência &mdash; com descrição, unidade, preço padrão e categoria (Hidráulica, Elétrica, etc.) &mdash; e reutilizá-los em várias ordens de mudança. Você pode até anexar um multiplicador de preço para margens específicas por cliente. Os modelos registram o uso para que os itens mais utilizados apareçam primeiro.</div>
+      </details>
+
+      <details>
+        <summary>O que são as sugestões de itens por IA?</summary>
+        <div class="answer">Anexe uma foto a uma ordem de mudança e a IA do ScopeProof, executada no próprio dispositivo (usando o framework Vision da Apple), lê qualquer texto visível e sugere itens relevantes para diversos ofícios &mdash; hidráulica, elétrica, climatização, marcenaria, pisos, pintura, telhados e muito mais. Tudo funciona inteiramente no seu dispositivo, sem chamadas à nuvem. Disponível nas versões Grátis e Pro.</div>
+      </details>
+
+      <details>
+        <summary>O que está incluído na versão Grátis em comparação com a Pro?</summary>
+        <div class="answer">A versão <strong>Grátis</strong> inclui até 3 ordens de mudança por vez, 3 itens por ordem, 1 foto por ordem, até 2 projetos, captura de assinatura presencial e PDFs com marca d'água. A versão <strong>Pro (US$ 9,99, pagamento único)</strong> desbloqueia: ordens de mudança ilimitadas, assinatura remota (e-mail / SMS / link), itens e fotos ilimitados, projetos ilimitados, modo À Prova de Disputa, exportação do ZIP de evidências, modelos de itens, logotipo da empresa + cor da marca + assinatura do empreiteiro nos PDFs, remoção da marca d'água e exportações QuickBooks IIF + JSON. Uma única compra, para sempre &mdash; sem assinatura mensal.</div>
+      </details>
+
+      <details>
+        <summary>Posso adicionar a identidade visual da minha empresa?</summary>
+        <div class="answer">Sim (Pro). Envie o logotipo da sua empresa, defina uma cor da marca e adicione a sua assinatura de empreiteiro. A sua identidade visual aparece em todos os PDFs &mdash; no cabeçalho, nas linhas de destaque e no bloco de assinatura na parte inferior.</div>
+      </details>
+
+      <details>
+        <summary>Quais formatos de exportação estão disponíveis?</summary>
+        <div class="answer">Todas as versões podem exportar <strong>PDFs</strong> profissionais (formato US Letter, com várias páginas) e resumos em <strong>CSV</strong>. A versão Pro adiciona arquivos <strong>QuickBooks IIF</strong> para importação na contabilidade, exportações em <strong>JSON</strong> do histórico completo de ordens de mudança e o <strong>ZIP de evidências</strong> para ordens À Prova de Disputa. Compartilhe por e-mail, Mensagens, AirDrop ou salve no app Arquivos.</div>
+      </details>
+
+      <details>
+        <summary>Posso editar uma ordem de mudança depois de assinada?</summary>
+        <div class="answer">Não &mdash; as ordens de mudança assinadas são intencionalmente imutáveis para preservar a integridade jurídica. Se algo precisar mudar, use <strong>Duplicar como Novo Rascunho</strong> (começa do zero) ou <strong>Criar Revisão</strong> (vincula-se à original por uma cadeia de revisões, mantendo o histórico claro). Ambas as opções estão disponíveis na tela de detalhes de uma ordem assinada.</div>
+      </details>
+
+      <details>
+        <summary>O aplicativo funciona offline?</summary>
+        <div class="answer">Sim. A criação de ordens de mudança, os itens, as fotos, a captura de assinatura, a geração de PDF, a exportação em CSV e a verificação de integridade funcionam todos sem conexão de rede. Os únicos recursos que exigem internet são a <strong>assinatura remota</strong> (que precisa de rede para entregar o link seguro e receber a assinatura de volta) e a validação de compra na App Store.</div>
+      </details>
+
+      <details>
+        <summary>O ScopeProof funciona em conjunto com o TradeSnap?</summary>
+        <div class="answer">O ScopeProof e o TradeSnap são aplicativos complementares do mesmo desenvolvedor. O <strong>ScopeProof</strong> cuida de ordens de mudança assinadas com itens e preços. O <strong>TradeSnap</strong> cuida da documentação com fotos de antes e depois. Eles compartilham a mesma linguagem visual, mas não os dados &mdash; cada um é independente. Use os dois se o seu fluxo de trabalho precisar de ambos, ou apenas um deles separadamente.</div>
+      </details>
+
+      <details>
+        <summary>Meus dados são privados?</summary>
+        <div class="answer">Sim. Todos os dados das suas ordens de mudança &mdash; ordens, dados dos clientes, fotos e assinaturas &mdash; permanecem no seu dispositivo e nunca são coletados. Com a sua permissão, o ScopeProof compartilha estatísticas de uso anônimas e relatórios de falhas (via Google Firebase) para que possamos corrigir problemas e melhorar o aplicativo; isso é opcional (opt-in) na UE, no Reino Unido e na Suíça, ativado por padrão nos demais lugares, e pode ser desligado a qualquer momento em <strong>Ajustes &rsaquo; Dados e Privacidade</strong>. Não há publicidade, nem rastreamento entre aplicativos, nem necessidade de conta. A outra situação em que os dados saem do seu dispositivo é a assinatura remota (Pro): a ordem de mudança é enviada de forma criptografada ao Firebase para que o navegador do cliente possa acessá-la &mdash; e a chave de descriptografia permanece no fragmento da URL que você envia a ele, de modo que nunca chega aos nossos servidores. Consulte a nossa <a href="https://hugolamarreftc.github.io/ScopeProof-legal/">política de privacidade</a> para todos os detalhes.</div>
+      </details>
+
+      <details>
+        <summary>O aplicativo travou &mdash; o que devo fazer?</summary>
+        <div class="answer">Primeiro, verifique se você está usando a versão mais recente da App Store. Se o problema persistir, envie um e-mail para <strong>forthemcreation@gmail.com</strong> com o modelo do seu dispositivo e a versão do iOS para que possamos investigar.</div>
+      </details>
+    </section>
+    </div>
+
+    <div id="ja" class="lang-section">
+<!-- ━━ Contact ━━ -->
+    <section class="contact-card">
+      <h2>お問い合わせ</h2>
+      <p>ご質問、不具合のご報告、機能のご要望などがございましたらお気軽にご連絡ください。通常24&nbsp;時間以内に返信いたします。</p>
+      <a class="email-link" href="mailto:forthemcreation@gmail.com">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        forthemcreation@gmail.com
+      </a>
+    </section>
+
+    <!-- ━━ FAQ ━━ -->
+    <section class="faq">
+      <h2>よくあるご質問</h2>
+
+      <details>
+        <summary>ScopeProof とは何ですか?</summary>
+        <div class="answer">ScopeProof は、現場での追加・変更工事をきちんと記録し、確実に代金を受け取りたい職人・業者向けの単独で使える iOS アプリです。明細を入力した変更指示書を作成し、その場でも遠隔でもお客様の署名をもらい、見栄えのする PDF を生成 &mdash; すべて1分以内、オフライン、サブスクリプションなしで完結します。</div>
+      </details>
+
+      <details>
+        <summary>変更指示書はどうやって作成しますか?</summary>
+        <div class="answer">ホーム画面の <strong>+</strong> ボタンをタップします。ScopeProof が現在地（通り名 + 日付）からわかりやすい工事名を自動入力するので、入力の手間が省けます。明細（内容、数量、単価、単位）を追加し、必要に応じて証拠写真を添付し、お客様の情報を登録します。合計はお使いの通貨で自動計算されます。</div>
+      </details>
+
+      <details>
+        <summary>署名の取得はどのように行いますか?</summary>
+        <div class="answer">作業が完了したら、端末をお客様にお渡しください。お客様は変更指示書を確認し、指または Apple Pencil で画面に直接署名します。署名は鮮明な PNG として保存され、日時、そして有効にしていれば GPS や端末情報とともに、注文に封印されます。</div>
+      </details>
+
+      <details>
+        <summary>遠隔署名とは何ですか?</summary>
+        <div class="answer">遠隔署名（Pro）を使えば、お客様はどこからでも変更指示書に署名できます。ScopeProof がメール、SMS、またはクリップボード経由で安全な Web リンクをお客様に送信します。お客様はブラウザでそれを開き、注文を確認して署名します。署名はプッシュ通知を通じて自動的にお使いのアプリに戻ってきます。変更指示書のデータはエンドツーエンドで暗号化されており &mdash; 復号鍵はあなたが送信した URL の中にしか存在せず、当社のサーバーには一切保存されません。</div>
+      </details>
+
+      <details>
+        <summary>遠隔署名のプライバシーとセキュリティはどう守られていますか?</summary>
+        <div class="answer">
+          変更指示書を遠隔署名用に送信すると、データが端末から出る前に、お使いの端末上で <strong>AES-256-GCM</strong> によって暗号化されます。当社のバックエンド（Firebase）にアップロードされるのは暗号化されたデータのみです。
+          <ul style="margin: 10px 0 10px 20px;">
+            <li>復号鍵がアップロードされることはありません。鍵は <strong>URL フラグメント</strong>（<code>#</code> 以降の部分）に埋め込まれており、ブラウザがサーバーに送信することは決してありません &mdash; つまり、鍵を持っているのはあなたとお客様だけです。</li>
+            <li>署名リクエストは <strong>7日後に自動的に期限切れ</strong>になります。それ以降、リンクは機能しなくなります。</li>
+            <li>ScopeProof は Firebase に<em>匿名で</em>サインインします &mdash; アカウントもメールアドレスも不要で、あなたを特定する情報は一切送信されません。</li>
+            <li>プッシュ通知（Firebase Cloud Messaging）は、お客様が注文を閲覧・署名・却下した場合、またはリクエストの期限が切れた場合にお知らせするためにのみ使用されます。</li>
+          </ul>
+          詳細は<a href="https://hugolamarreftc.github.io/ScopeProof-legal/">プライバシーポリシー</a>をご覧ください。
+        </div>
+      </details>
+
+      <details>
+        <summary>ディスピュートプルーフ（改ざん防止）モードとは何ですか?</summary>
+        <div class="answer">ディスピュートプルーフモード（Pro）は、署名済みの変更指示書を <strong>SHA-256 ハッシュ</strong>と、端末ローカルの鍵で生成した <strong>HMAC-SHA256 署名</strong>によって暗号学的に封印します。このハッシュは、明細、添付写真、お客様の署名、GPS、署名日時を対象とします。後から誰かがその一部でも改変すると、検証によって改ざんが検出されます。署名済みの注文はいつでも詳細画面から再検証できます。</div>
+      </details>
+
+      <details>
+        <summary>証拠パッケージとは何ですか?</summary>
+        <div class="answer">証拠パッケージ（Pro）は、署名済みの変更指示書ごとに書き出せる ZIP ファイルです。元の写真、お客様の署名画像、署名済み PDF、機械可読の証明マニフェスト（SHA-256 ハッシュ、GPS、日時）、そして <strong>shasum</strong> などの標準ツールを使って誰でも独立してハッシュを検証できる方法を説明した README が含まれます。法的紛争、保険請求、あるいは単にご自身の記録用に役立ちます。</div>
+      </details>
+
+      <details>
+        <summary>明細テンプレートとは何ですか?</summary>
+        <div class="answer">テンプレート（Pro）を使えば、よく使う明細 &mdash; 内容、単位、既定の価格、カテゴリ（配管、電気など） &mdash; を保存し、複数の変更指示書で再利用できます。お客様ごとの上乗せ用に価格係数を設定することもできます。テンプレートは使用回数を記録するので、よく使う項目が上位に表示されます。</div>
+      </details>
+
+      <details>
+        <summary>AI 明細サジェストとは何ですか?</summary>
+        <div class="answer">変更指示書に写真を添付すると、ScopeProof の端末内蔵 AI（Apple の Vision フレームワークを使用）が写っている文字を読み取り、各業種にわたる関連明細を提案します &mdash; 配管、電気、空調（HVAC）、大工、床、塗装、屋根など。すべて端末上で動作し、クラウドへの通信は一切ありません。Free・Pro 両方のプランでご利用いただけます。</div>
+      </details>
+
+      <details>
+        <summary>Free と Pro の違いは何ですか?</summary>
+        <div class="answer"><strong>Free</strong> には、同時に最大3件の変更指示書、注文ごとに3項目までの明細、注文ごとに1枚の写真、最大2件のプロジェクト、対面での署名取得、透かし入り PDF が含まれます。<strong>Pro（1回限り $9.99）</strong>では次のすべてが解放されます: 変更指示書の無制限作成、遠隔署名（メール / SMS / リンク）、明細と写真の無制限、プロジェクトの無制限、ディスピュートプルーフモード、証拠 ZIP の書き出し、明細テンプレート、PDF への会社ロゴ + ブランドカラー + 業者署名、透かしの除去、QuickBooks IIF + JSON の書き出し。1回の購入で永久に使えます &mdash; サブスクリプションはありません。</div>
+      </details>
+
+      <details>
+        <summary>会社のブランディングを追加できますか?</summary>
+        <div class="answer">はい（Pro）。会社ロゴをアップロードし、ブランドカラーを設定し、業者署名を追加できます。あなたのブランディングはすべての PDF &mdash; ヘッダー、アクセントライン、そして最下部の署名欄 &mdash; に表示されます。</div>
+      </details>
+
+      <details>
+        <summary>どんな書き出し形式に対応していますか?</summary>
+        <div class="answer">すべてのプランで、見栄えのする <strong>PDF</strong>（USレター、複数ページ）と <strong>CSV</strong> サマリーを書き出せます。Pro では、会計ソフトへの取り込み用の <strong>QuickBooks IIF</strong> ファイル、変更指示書の全履歴の <strong>JSON</strong> 書き出し、そしてディスピュートプルーフ注文向けの<strong>証拠 ZIP</strong> が追加されます。メール、メッセージ、AirDrop で共有したり、ファイルに保存したりできます。</div>
+      </details>
+
+      <details>
+        <summary>署名後に変更指示書を編集できますか?</summary>
+        <div class="answer">いいえ &mdash; 署名済みの変更指示書は、法的な完全性を保つために意図的に変更不可となっています。何か変更が必要な場合は、<strong>複製して新規ドラフトにする</strong>（まっさらな状態から始める）か、<strong>改訂版を作成する</strong>（改訂チェーンで元の注文とリンクし、履歴が明確に保たれる）をご利用ください。どちらの操作も、署名済み注文の詳細画面から行えます。</div>
+      </details>
+
+      <details>
+        <summary>アプリはオフラインでも使えますか?</summary>
+        <div class="answer">はい。変更指示書の作成、明細、写真、署名の取得、PDF の生成、CSV の書き出し、完全性の検証はすべて、ネットワーク接続なしで動作します。オンラインが必要な機能は、<strong>遠隔署名</strong>（安全なリンクの送付と返ってきた署名の受信にネットワークが必要）と App Store の購入検証だけです。</div>
+      </details>
+
+      <details>
+        <summary>ScopeProof は TradeSnap と連携しますか?</summary>
+        <div class="answer">ScopeProof と TradeSnap は、同じ開発者による姉妹アプリです。<strong>ScopeProof</strong> は明細と価格を含む署名済み変更指示書を扱います。<strong>TradeSnap</strong> はビフォー・アフター写真の記録を扱います。デザインの世界観は共有していますがデータは共有しません &mdash; それぞれ単独で使えます。両方が必要なワークフローなら両方を、片方だけでよければそれだけをお使いください。</div>
+      </details>
+
+      <details>
+        <summary>私のデータは保護されますか?</summary>
+        <div class="answer">はい。あなたの変更指示書データ &mdash; 注文、お客様の情報、写真、署名 &mdash; はすべてお使いの端末内にとどまり、収集されることは一切ありません。あなたの許可があれば、ScopeProof は不具合の修正やアプリの改善のために匿名の利用状況データとクラッシュレポート（Google Firebase 経由）を共有します。これは EU、英国、スイスではオプトイン、それ以外の地域では既定でオンとなっており、<strong>設定 &rsaquo; データとプライバシー</strong>からいつでもオフにできます。広告も、アプリをまたいだトラッキングも、アカウント登録もありません。データが端末を出るもう一つの場面は遠隔署名（Pro）です: お客様の Web ブラウザが取得できるよう、変更指示書は暗号化された形で Firebase にアップロードされます &mdash; そして復号鍵はあなたが送る URL のフラグメント内にとどまるため、当社のサーバーに届くことはありません。詳細は<a href="https://hugolamarreftc.github.io/ScopeProof-legal/">プライバシーポリシー</a>をご覧ください。</div>
+      </details>
+
+      <details>
+        <summary>アプリが落ちました &mdash; どうすればよいですか?</summary>
+        <div class="answer">まず、App Store から最新バージョンをお使いになっているかご確認ください。それでも問題が解決しない場合は、調査のため、お使いの端末モデルと iOS のバージョンを添えて <strong>forthemcreation@gmail.com</strong> までメールでご連絡ください。</div>
+      </details>
+    </section>
+    </div>
+
+    <div id="pl" class="lang-section">
+<!-- ━━ Contact ━━ -->
+    <section class="contact-card">
+      <h2>Skontaktuj się z nami</h2>
+      <p>Masz pytanie, znalazłeś błąd albo chcesz zaproponować nową funkcję? Zwykle odpowiadamy w ciągu 24&nbsp;godzin.</p>
+      <a class="email-link" href="mailto:forthemcreation@gmail.com">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        forthemcreation@gmail.com
+      </a>
+    </section>
+
+    <!-- ━━ FAQ ━━ -->
+    <section class="faq">
+      <h2>Najczęściej zadawane pytania</h2>
+
+      <details>
+        <summary>Czym jest ScopeProof?</summary>
+        <div class="answer">ScopeProof to samodzielna aplikacja na iOS dla wykonawców, którzy muszą udokumentować zmiany w zakresie prac i otrzymać za nie zapłatę. Stwórz zlecenie zmiany z rozpisanymi pozycjami kosztorysu, zbierz podpis klienta na miejscu lub zdalnie i wygeneruj profesjonalny plik PDF &mdash; wszystko w niecałą minutę, offline, bez abonamentu.</div>
+      </details>
+
+      <details>
+        <summary>Jak utworzyć zlecenie zmiany?</summary>
+        <div class="answer">Naciśnij przycisk <strong>+</strong> na ekranie głównym. ScopeProof automatycznie podpowiada nazwę zlecenia na podstawie Twojej bieżącej lokalizacji (ulica + data), żeby oszczędzić Ci pisania. Dodaj pozycje kosztorysu (opis, ilość, cena jednostkowa, jednostka), opcjonalnie dołącz zdjęcia jako dowód i wpisz dane klienta. Sumy obliczają się automatycznie w Twojej walucie.</div>
+      </details>
+
+      <details>
+        <summary>Jak działa zbieranie podpisu?</summary>
+        <div class="answer">Gdy prace są skończone, podaj urządzenie klientowi. Klient przegląda zlecenie zmiany i podpisuje się bezpośrednio na ekranie palcem lub rysikiem Apple Pencil. Podpis jest zapisywany jako wyraźny plik PNG i scalany ze zleceniem &mdash; razem ze znacznikiem czasu oraz, jeśli włączone, danymi GPS i informacjami o urządzeniu.</div>
+      </details>
+
+      <details>
+        <summary>Czym jest podpisywanie zdalne?</summary>
+        <div class="answer">Podpisywanie zdalne (Pro) pozwala klientom podpisać zlecenie zmiany z dowolnego miejsca. ScopeProof wysyła im bezpieczny link internetowy e-mailem, SMS-em lub przez schowek. Klient otwiera go w przeglądarce, przegląda zlecenie i podpisuje. Podpis wraca do Twojej aplikacji automatycznie przez powiadomienie push. Dane zlecenia zmiany są szyfrowane od końca do końca &mdash; klucz deszyfrujący znajduje się wyłącznie w wysłanym przez Ciebie adresie URL, nigdy na naszych serwerach.</div>
+      </details>
+
+      <details>
+        <summary>Jak zapewniona jest prywatność i bezpieczeństwo podpisywania zdalnego?</summary>
+        <div class="answer">
+          Gdy wysyłasz zlecenie zmiany do podpisu zdalnego, jest ono szyfrowane na Twoim urządzeniu za pomocą <strong>AES-256-GCM</strong>, zanim cokolwiek je opuści. Do naszego zaplecza (Firebase) trafia wyłącznie zaszyfrowana zawartość.
+          <ul style="margin: 10px 0 10px 20px;">
+            <li>Klucz deszyfrujący nigdy nie jest przesyłany. Jest osadzony we <strong>fragmencie adresu URL</strong> (części po <code>#</code>), której przeglądarki nigdy nie wysyłają do serwerów &mdash; więc mają go tylko Ty i Twój klient.</li>
+            <li>Prośby o podpis <strong>automatycznie wygasają po 7 dniach</strong>. Po tym czasie link przestaje działać.</li>
+            <li>ScopeProof loguje się do Firebase <em>anonimowo</em> &mdash; bez konta, bez e-maila, bez żadnego identyfikatora dotyczącego Ciebie.</li>
+            <li>Powiadomienia push (Firebase Cloud Messaging) służą wyłącznie do poinformowania Cię, gdy klient wyświetli, podpisze lub odrzuci prośbę albo pozwoli jej wygasnąć.</li>
+          </ul>
+          Pełne informacje znajdziesz w naszej <a href="https://hugolamarreftc.github.io/ScopeProof-legal/">polityce prywatności</a>.
+        </div>
+      </details>
+
+      <details>
+        <summary>Czym jest tryb Dispute-Proof?</summary>
+        <div class="answer">Tryb Dispute-Proof (Pro) kryptograficznie zabezpiecza podpisane zlecenie zmiany za pomocą <strong>haszowania SHA-256</strong> oraz <strong>podpisu HMAC-SHA256</strong> generowanego kluczem przechowywanym lokalnie na urządzeniu. Hasz obejmuje pozycje kosztorysu, dołączone zdjęcia, podpis klienta, dane GPS oraz znacznik czasu podpisania. Jeśli ktokolwiek później to zmieni, weryfikacja wykryje ingerencję. Każde podpisane zlecenie możesz ponownie zweryfikować w dowolnej chwili z widoku szczegółów.</div>
+      </details>
+
+      <details>
+        <summary>Czym jest pakiet dowodowy?</summary>
+        <div class="answer">Pakiet dowodowy (Pro) to plik ZIP, który możesz wyeksportować dla dowolnego podpisanego zlecenia zmiany. Zawiera oryginalne zdjęcia, obraz podpisu klienta, podpisany plik PDF, czytelny maszynowo manifest dowodowy (hasze SHA-256, dane GPS, znaczniki czasu) oraz plik README wyjaśniający, jak każdy może niezależnie zweryfikować hasze za pomocą standardowych narzędzi, takich jak <strong>shasum</strong>. Przydaje się przy sporach prawnych, roszczeniach ubezpieczeniowych albo po prostu do Twojej własnej dokumentacji.</div>
+      </details>
+
+      <details>
+        <summary>Czym są szablony pozycji kosztorysu?</summary>
+        <div class="answer">Szablony (Pro) pozwalają zapisać często używane pozycje kosztorysu &mdash; z opisem, jednostką, domyślną ceną i kategorią (Hydraulika, Elektryka itd.) &mdash; i wykorzystywać je ponownie w różnych zleceniach zmiany. Możesz nawet przypisać mnożnik ceny do indywidualnych narzutów dla danego klienta. Szablony śledzą częstość użycia, więc najczęściej używane pozycje pojawiają się jako pierwsze.</div>
+      </details>
+
+      <details>
+        <summary>Czym są podpowiedzi pozycji kosztorysu oparte na AI?</summary>
+        <div class="answer">Dołącz zdjęcie do zlecenia zmiany, a sztuczna inteligencja ScopeProof działająca na urządzeniu (z wykorzystaniem frameworka Apple Vision) odczyta widoczny tekst i zaproponuje odpowiednie pozycje kosztorysu z różnych branż &mdash; hydraulika, elektryka, HVAC, stolarka, podłogi, malowanie, dekarstwo i więcej. Działa w całości na Twoim urządzeniu, bez żadnych połączeń z chmurą. Dostępne zarówno w wersji Free, jak i Pro.</div>
+      </details>
+
+      <details>
+        <summary>Co zawiera wersja Free, a co Pro?</summary>
+        <div class="answer"><strong>Free</strong> obejmuje do 3 zleceń zmiany jednocześnie, 3 pozycji kosztorysu na zlecenie, 1 zdjęcie na zlecenie, do 2 projektów, zbieranie podpisu na miejscu oraz pliki PDF ze znakiem wodnym. <strong>Pro (jednorazowo 9,99 USD)</strong> odblokowuje: nieograniczoną liczbę zleceń zmiany, podpisywanie zdalne (e-mail / SMS / link), nieograniczoną liczbę pozycji kosztorysu i zdjęć, nieograniczoną liczbę projektów, tryb Dispute-Proof, eksport pakietu dowodowego ZIP, szablony pozycji kosztorysu, logo firmy + kolor marki + podpis wykonawcy na plikach PDF, usunięcie znaku wodnego oraz eksport QuickBooks IIF + JSON. Jeden zakup, na zawsze &mdash; bez abonamentu.</div>
+      </details>
+
+      <details>
+        <summary>Czy mogę dodać branding mojej firmy?</summary>
+        <div class="answer">Tak (Pro). Wgraj logo firmy, ustaw kolor marki i dodaj swój podpis wykonawcy. Twój branding pojawia się na każdym pliku PDF &mdash; w nagłówku, na liniach akcentujących oraz w bloku podpisu na dole.</div>
+      </details>
+
+      <details>
+        <summary>Jakie formaty eksportu są dostępne?</summary>
+        <div class="answer">We wszystkich wersjach możesz eksportować profesjonalne pliki <strong>PDF</strong> (format US Letter, wielostronicowe) oraz podsumowania <strong>CSV</strong>. Pro dodaje pliki <strong>QuickBooks IIF</strong> do importu w księgowości, eksporty <strong>JSON</strong> z pełną historią zleceń zmiany oraz <strong>pakiet dowodowy ZIP</strong> dla zleceń w trybie Dispute-Proof. Udostępniaj e-mailem, w Wiadomościach, przez AirDrop lub zapisuj w aplikacji Pliki.</div>
+      </details>
+
+      <details>
+        <summary>Czy mogę edytować zlecenie zmiany po jego podpisaniu?</summary>
+        <div class="answer">Nie &mdash; podpisane zlecenia zmiany są celowo niezmienne, aby zachować integralność prawną. Jeśli coś trzeba zmienić, użyj opcji <strong>Powiel jako nowy szkic</strong> (zaczyna od zera) albo <strong>Utwórz wersję</strong> (łączy się z oryginałem przez łańcuch wersji, dzięki czemu historia pozostaje czytelna). Obie opcje są dostępne z widoku szczegółów podpisanego zlecenia.</div>
+      </details>
+
+      <details>
+        <summary>Czy aplikacja działa offline?</summary>
+        <div class="answer">Tak. Tworzenie zleceń zmiany, pozycje kosztorysu, zdjęcia, zbieranie podpisu, generowanie plików PDF, eksport CSV oraz weryfikacja integralności &mdash; wszystko to działa bez połączenia z siecią. Jedyne funkcje wymagające internetu to <strong>podpisywanie zdalne</strong> (które potrzebuje sieci, by dostarczyć bezpieczny link i odebrać zwrócony podpis) oraz weryfikacja zakupu w App Store.</div>
+      </details>
+
+      <details>
+        <summary>Czy ScopeProof współpracuje z TradeSnap?</summary>
+        <div class="answer">ScopeProof i TradeSnap to aplikacje uzupełniające się, od tego samego twórcy. <strong>ScopeProof</strong> obsługuje podpisane zlecenia zmiany z pozycjami kosztorysu i cenami. <strong>TradeSnap</strong> obsługuje dokumentację zdjęć przed i po. Mają wspólny język wizualny, ale nie współdzielą danych &mdash; każda działa samodzielnie. Używaj obu, jeśli Twój sposób pracy tego wymaga, lub każdej z osobna.</div>
+      </details>
+
+      <details>
+        <summary>Czy moje dane są prywatne?</summary>
+        <div class="answer">Tak. Wszystkie Twoje dane zleceń zmiany &mdash; zlecenia, dane klientów, zdjęcia i podpisy &mdash; pozostają na Twoim urządzeniu i nigdy nie są zbierane. Za Twoją zgodą ScopeProof udostępnia anonimowe statystyki użytkowania i raporty o awariach (przez Google Firebase), abyśmy mogli naprawiać błędy i ulepszać aplikację; w UE, Wielkiej Brytanii i Szwajcarii jest to opcja dobrowolna (opt-in), w pozostałych regionach domyślnie włączona, i można ją wyłączyć w dowolnym momencie w <strong>Ustawienia &rsaquo; Dane i prywatność</strong>. Nie ma reklam, śledzenia między aplikacjami ani wymogu posiadania konta. Jedyny inny przypadek, gdy dane opuszczają Twoje urządzenie, to podpisywanie zdalne (Pro): zlecenie zmiany jest przesyłane w postaci zaszyfrowanej do Firebase, aby przeglądarka klienta mogła je pobrać &mdash; a klucz deszyfrujący pozostaje we fragmencie adresu URL, który mu wysyłasz, więc nigdy nie trafia na nasze serwery. Pełne informacje znajdziesz w naszej <a href="https://hugolamarreftc.github.io/ScopeProof-legal/">polityce prywatności</a>.</div>
+      </details>
+
+      <details>
+        <summary>Aplikacja uległa awarii &mdash; co powinienem zrobić?</summary>
+        <div class="answer">Najpierw upewnij się, że korzystasz z najnowszej wersji ze sklepu App Store. Jeśli problem nadal występuje, napisz do nas na <strong>forthemcreation@gmail.com</strong>, podając model urządzenia i wersję iOS, abyśmy mogli zbadać sprawę.</div>
+      </details>
+    </section>
+    </div>
+
+    <div id="ru" class="lang-section">
+<!-- ━━ Contact ━━ -->
+    <section class="contact-card">
+      <h2>Свяжитесь с нами</h2>
+      <p>Есть вопрос, нашли ошибку или хотите предложить функцию? Обычно мы отвечаем в течение 24&nbsp;часов.</p>
+      <a class="email-link" href="mailto:forthemcreation@gmail.com">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        forthemcreation@gmail.com
+      </a>
+    </section>
+
+    <!-- ━━ FAQ ━━ -->
+    <section class="faq">
+      <h2>Часто задаваемые вопросы</h2>
+
+      <details>
+        <summary>Что такое ScopeProof?</summary>
+        <div class="answer">ScopeProof — это самостоятельное приложение для iOS, созданное для подрядчиков, которым нужно документировать изменения в объёме работ и получать за них оплату прямо на объекте. Составьте дополнительное соглашение с разбивкой по позициям, получите подпись заказчика на месте или удалённо и сформируйте профессиональный PDF — и всё это меньше чем за минуту, без интернета и без подписки.</div>
+      </details>
+
+      <details>
+        <summary>Как создать дополнительное соглашение?</summary>
+        <div class="answer">Нажмите кнопку <strong>+</strong> на главном экране. ScopeProof автоматически подставит понятное название работ по вашему текущему местоположению (улица + дата), чтобы вы меньше печатали. Добавьте позиции (описание, количество, цена за единицу, единица измерения), при желании приложите фото в качестве доказательства и укажите данные заказчика. Итоговые суммы рассчитываются автоматически в вашей валюте.</div>
+      </details>
+
+      <details>
+        <summary>Как работает захват подписи?</summary>
+        <div class="answer">Когда работа выполнена, передайте устройство заказчику. Он просматривает дополнительное соглашение и расписывается прямо на экране пальцем или Apple Pencil. Подпись сохраняется в виде чёткого PNG и закрепляется за соглашением — вместе с отметкой времени и, если эта функция включена, координатами GPS и сведениями об устройстве.</div>
+      </details>
+
+      <details>
+        <summary>Что такое удалённое подписание?</summary>
+        <div class="answer">Удалённое подписание (Pro) позволяет заказчикам подписывать дополнительное соглашение откуда угодно. ScopeProof отправляет им защищённую веб-ссылку по электронной почте, SMS или через буфер обмена. Они открывают её в браузере, просматривают соглашение и расписываются. Подпись автоматически возвращается в ваше приложение через push-уведомление. Данные дополнительного соглашения шифруются сквозным шифрованием — ключ расшифровки находится только в отправленной вами ссылке и никогда не попадает на наши серверы.</div>
+      </details>
+
+      <details>
+        <summary>Как обеспечивается конфиденциальность и безопасность удалённого подписания?</summary>
+        <div class="answer">
+          Когда вы отправляете дополнительное соглашение на удалённое подписание, оно шифруется на вашем устройстве с помощью <strong>AES-256-GCM</strong> ещё до того, как что-либо его покинет. На наш сервер (Firebase) загружаются только зашифрованные данные.
+          <ul style="margin: 10px 0 10px 20px;">
+            <li>Ключ расшифровки никогда не загружается. Он встроен в <strong>фрагмент URL</strong> (часть после <code>#</code>), который браузеры никогда не передают серверам — поэтому он есть только у вас и вашего заказчика.</li>
+            <li>Запросы на подписание <strong>автоматически истекают через 7 дней</strong>. После этого ссылка перестаёт работать.</li>
+            <li>ScopeProof входит в Firebase <em>анонимно</em> — без учётной записи, без электронной почты, без передачи каких-либо идентификаторов о вас.</li>
+            <li>Push-уведомления (Firebase Cloud Messaging) используются только для того, чтобы оповестить вас, когда заказчик просмотрел, подписал, отклонил соглашение или дал запросу истечь.</li>
+          </ul>
+          Все подробности — в нашей <a href="https://hugolamarreftc.github.io/ScopeProof-legal/">политике конфиденциальности</a>.
+        </div>
+      </details>
+
+      <details>
+        <summary>Что такое режим защиты от споров (Dispute-Proof)?</summary>
+        <div class="answer">Режим защиты от споров (Dispute-Proof, Pro) криптографически закрепляет подписанное дополнительное соглашение с помощью <strong>хеширования SHA-256</strong> и <strong>подписи HMAC-SHA256</strong>, сформированной с использованием локального ключа устройства. Хеш охватывает позиции, приложенные фото, подпись заказчика, координаты GPS и отметку времени подписания. Если кто-то впоследствии что-либо изменит, проверка обнаружит подмену. Вы можете повторно проверить любое подписанное соглашение в любой момент из экрана с деталями.</div>
+      </details>
+
+      <details>
+        <summary>Что такое пакет доказательств?</summary>
+        <div class="answer">Пакет доказательств (Pro) — это ZIP-файл, который можно экспортировать для любого подписанного дополнительного соглашения. В нём содержатся исходные фото, изображение подписи заказчика, подписанный PDF, машиночитаемый манифест доказательств (хеши SHA-256, координаты GPS, отметки времени) и файл README с объяснением того, как любой желающий может самостоятельно проверить хеши с помощью стандартных инструментов, таких как <strong>shasum</strong>. Пригодится при юридических спорах, страховых претензиях или просто для ваших собственных записей.</div>
+      </details>
+
+      <details>
+        <summary>Что такое шаблоны позиций?</summary>
+        <div class="answer">Шаблоны (Pro) позволяют сохранять часто используемые позиции — с описанием, единицей измерения, ценой по умолчанию и категорией (Сантехника, Электрика и т. д.) — и повторно использовать их в разных дополнительных соглашениях. Можно даже задать ценовой множитель для наценок под конкретного заказчика. Шаблоны отслеживают частоту использования, поэтому самые востребованные позиции всегда оказываются первыми.</div>
+      </details>
+
+      <details>
+        <summary>Что такое ИИ-подсказки позиций?</summary>
+        <div class="answer">Приложите фото к дополнительному соглашению, и встроенный ИИ ScopeProof (на базе фреймворка Apple Vision) распознает любой видимый текст и предложит подходящие позиции по разным специальностям — сантехника, электрика, ОВиК, столярные работы, напольные покрытия, малярные работы, кровля и многое другое. Всё работает прямо на вашем устройстве, без обращений к облаку. Доступно как в бесплатной версии, так и в Pro.</div>
+      </details>
+
+      <details>
+        <summary>Что входит в бесплатную версию и в Pro?</summary>
+        <div class="answer"><strong>Бесплатная версия</strong> включает до 3 дополнительных соглашений одновременно, 3 позиций на соглашение, 1 фото на соглашение, до 2 проектов, захват подписи при личной встрече и PDF с водяным знаком. <strong>Pro (единоразово $9.99)</strong> открывает: неограниченное число дополнительных соглашений, удалённое подписание (по эл. почте / SMS / ссылке), неограниченное число позиций и фото, неограниченное число проектов, режим защиты от споров, экспорт пакета доказательств в ZIP, шаблоны позиций, логотип компании + фирменный цвет + подпись подрядчика в PDF, удаление водяного знака, а также экспорт в QuickBooks IIF и JSON. Одна покупка — навсегда, без подписки.</div>
+      </details>
+
+      <details>
+        <summary>Можно ли добавить фирменный стиль моей компании?</summary>
+        <div class="answer">Да (Pro). Загрузите логотип компании, задайте фирменный цвет и добавьте подпись подрядчика. Ваш фирменный стиль будет отображаться на каждом PDF — в шапке, на акцентных линиях и в блоке подписи внизу.</div>
+      </details>
+
+      <details>
+        <summary>Какие форматы экспорта доступны?</summary>
+        <div class="answer">Во всех версиях можно экспортировать профессиональные <strong>PDF</strong> (формат US Letter, несколько страниц) и сводки в <strong>CSV</strong>. В Pro добавляются файлы <strong>QuickBooks IIF</strong> для импорта в бухгалтерию, экспорт всей истории дополнительных соглашений в <strong>JSON</strong> и <strong>пакет доказательств в ZIP</strong> для соглашений с режимом защиты от споров. Делитесь по эл. почте, через «Сообщения», AirDrop или сохраняйте в «Файлы».</div>
+      </details>
+
+      <details>
+        <summary>Можно ли отредактировать дополнительное соглашение после подписания?</summary>
+        <div class="answer">Нет — подписанные дополнительные соглашения намеренно сделаны неизменяемыми, чтобы сохранить их юридическую силу. Если что-то нужно изменить, используйте <strong>Дублировать как новый черновик</strong> (создаёт соглашение с нуля) или <strong>Создать редакцию</strong> (связывает с оригиналом через цепочку редакций, чтобы история оставалась прозрачной). Оба варианта доступны на экране с деталями подписанного соглашения.</div>
+      </details>
+
+      <details>
+        <summary>Работает ли приложение без интернета?</summary>
+        <div class="answer">Да. Создание дополнительных соглашений, позиции, фото, захват подписи, формирование PDF, экспорт в CSV и проверка целостности — всё работает без подключения к сети. Единственные онлайн-функции — это <strong>удалённое подписание</strong> (которому нужна сеть, чтобы доставить защищённую ссылку и получить обратно подпись) и проверка покупки в App Store.</div>
+      </details>
+
+      <details>
+        <summary>Работает ли ScopeProof вместе с TradeSnap?</summary>
+        <div class="answer">ScopeProof и TradeSnap — приложения-компаньоны от одного разработчика. <strong>ScopeProof</strong> отвечает за подписанные дополнительные соглашения с позициями и ценами. <strong>TradeSnap</strong> отвечает за документирование фото «до/после». У них общий дизайн, но не общие данные — каждое работает самостоятельно. Используйте оба, если того требует ваш рабочий процесс, или любое из них по отдельности.</div>
+      </details>
+
+      <details>
+        <summary>Конфиденциальны ли мои данные?</summary>
+        <div class="answer">Да. Все данные ваших дополнительных соглашений — соглашения, данные заказчиков, фото и подписи — остаются на вашем устройстве и никогда не собираются. С вашего разрешения ScopeProof передаёт анонимную статистику использования и отчёты о сбоях (через Google Firebase), чтобы мы могли исправлять ошибки и улучшать приложение; в ЕС, Великобритании и Швейцарии это требует вашего согласия, в остальных регионах включено по умолчанию, и в любой момент это можно отключить в разделе <strong>Настройки &rsaquo; Данные и конфиденциальность</strong>. Никакой рекламы, никакого межприложенческого отслеживания и никакой учётной записи не требуется. Ещё один случай, когда данные покидают ваше устройство, — это удалённое подписание (Pro): дополнительное соглашение загружается в зашифрованном виде в Firebase, чтобы веб-браузер заказчика мог его получить, — а ключ расшифровки остаётся во фрагменте URL, который вы ему отправляете, поэтому он никогда не попадает на наши серверы. Все подробности — в нашей <a href="https://hugolamarreftc.github.io/ScopeProof-legal/">политике конфиденциальности</a>.</div>
+      </details>
+
+      <details>
+        <summary>Приложение вылетело — что делать?</summary>
+        <div class="answer">Сначала убедитесь, что у вас установлена последняя версия из App Store. Если проблема не исчезает, напишите нам на <strong>forthemcreation@gmail.com</strong>, указав модель устройства и версию iOS, чтобы мы могли разобраться.</div>
+      </details>
+    </section>
+    </div>
+
+    <div id="id" class="lang-section">
+<!-- ━━ Contact ━━ -->
+    <section class="contact-card">
+      <h2>Hubungi Kami</h2>
+      <p>Punya pertanyaan, menemukan bug, atau ingin mengusulkan fitur? Kami biasanya membalas dalam waktu 24&nbsp;jam.</p>
+      <a class="email-link" href="mailto:forthemcreation@gmail.com">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        forthemcreation@gmail.com
+      </a>
+    </section>
+
+    <!-- ━━ FAQ ━━ -->
+    <section class="faq">
+      <h2>Pertanyaan yang Sering Diajukan</h2>
+
+      <details>
+        <summary>Apa itu ScopeProof?</summary>
+        <div class="answer">ScopeProof adalah aplikasi iOS mandiri untuk kontraktor yang perlu mendokumentasikan dan dibayar atas perubahan lingkup pekerjaan di lapangan. Buat change order dengan rincian item per baris, ambil tanda tangan pelanggan di tempat atau dari jarak jauh, dan hasilkan PDF profesional &mdash; semuanya dalam waktu kurang dari satu menit, offline, tanpa langganan.</div>
+      </details>
+
+      <details>
+        <summary>Bagaimana cara membuat change order?</summary>
+        <div class="answer">Ketuk tombol <strong>+</strong> di layar utama. ScopeProof otomatis mengisi nama pekerjaan yang cerdas berdasarkan lokasi Anda saat ini (nama jalan + tanggal) agar Anda tidak perlu banyak mengetik. Tambahkan item per baris (deskripsi, jumlah, harga satuan, satuan), opsional lampirkan foto sebagai bukti, dan isi data pelanggan. Total dihitung otomatis menggunakan mata uang Anda.</div>
+      </details>
+
+      <details>
+        <summary>Bagaimana cara kerja pengambilan tanda tangan?</summary>
+        <div class="answer">Saat pekerjaan selesai, serahkan perangkat Anda kepada pelanggan. Mereka meninjau change order dan menandatangani langsung di layar dengan jari atau Apple Pencil. Tanda tangan disimpan sebagai PNG yang tajam dan disegel bersama change order &mdash; berikut cap waktunya dan, jika diaktifkan, GPS serta info perangkat.</div>
+      </details>
+
+      <details>
+        <summary>Apa itu tanda tangan jarak jauh?</summary>
+        <div class="answer">Tanda tangan jarak jauh (Pro) memungkinkan pelanggan menandatangani change order dari mana saja. ScopeProof mengirimkan tautan web yang aman kepada mereka melalui email, SMS, atau papan klip. Mereka membukanya di browser, meninjau change order, lalu menandatangani. Tanda tangan kembali ke aplikasi Anda secara otomatis melalui notifikasi push. Data change order dienkripsi end-to-end &mdash; kunci dekripsi hanya ada di URL yang Anda kirim, tidak pernah di server kami.</div>
+      </details>
+
+      <details>
+        <summary>Bagaimana tanda tangan jarak jauh dijaga kerahasiaan dan keamanannya?</summary>
+        <div class="answer">
+          Saat Anda mengirim change order untuk ditandatangani dari jarak jauh, change order tersebut dienkripsi di perangkat Anda dengan <strong>AES-256-GCM</strong> sebelum apa pun meninggalkan perangkat. Hanya muatan terenkripsi yang diunggah ke backend kami (Firebase).
+          <ul style="margin: 10px 0 10px 20px;">
+            <li>Kunci dekripsi tidak pernah diunggah. Kunci itu disematkan dalam <strong>fragmen URL</strong> (bagian setelah <code>#</code>), yang tidak pernah dikirim browser ke server &mdash; sehingga hanya Anda dan pelanggan Anda yang memilikinya.</li>
+            <li>Permintaan tanda tangan <strong>otomatis kedaluwarsa setelah 7 hari</strong>. Setelah itu, tautan berhenti berfungsi.</li>
+            <li>ScopeProof masuk ke Firebase secara <em>anonim</em> &mdash; tanpa akun, tanpa email, tanpa identifikasi apa pun tentang Anda yang dikirim.</li>
+            <li>Notifikasi push (Firebase Cloud Messaging) hanya digunakan untuk memberi tahu Anda saat pelanggan melihat, menandatangani, menolak, atau membiarkan permintaan kedaluwarsa.</li>
+          </ul>
+          Rincian lengkap ada di <a href="https://hugolamarreftc.github.io/ScopeProof-legal/">kebijakan privasi</a> kami.
+        </div>
+      </details>
+
+      <details>
+        <summary>Apa itu mode Dispute-Proof?</summary>
+        <div class="answer">Mode Dispute-Proof (Pro) menyegel change order yang telah ditandatangani secara kriptografis dengan <strong>hashing SHA-256</strong> dan <strong>tanda tangan HMAC-SHA256</strong> yang dihasilkan dengan kunci lokal perangkat. Hash mencakup item per baris, foto yang dilampirkan, tanda tangan pelanggan, GPS, dan cap waktu penandatanganan. Jika ada yang mengubah salah satunya di kemudian hari, verifikasi akan mendeteksi pemalsuan tersebut. Anda dapat memverifikasi ulang change order yang telah ditandatangani kapan saja dari tampilan detail.</div>
+      </details>
+
+      <details>
+        <summary>Apa itu paket bukti?</summary>
+        <div class="answer">Paket bukti (Pro) adalah file ZIP yang dapat Anda ekspor untuk setiap change order yang telah ditandatangani. File ini berisi foto asli, gambar tanda tangan pelanggan, PDF yang telah ditandatangani, manifes bukti yang dapat dibaca mesin (hash SHA-256, GPS, cap waktu), dan README yang menjelaskan cara siapa pun memverifikasi hash secara mandiri menggunakan alat standar seperti <strong>shasum</strong>. Berguna untuk sengketa hukum, klaim asuransi, atau sekadar catatan Anda sendiri.</div>
+      </details>
+
+      <details>
+        <summary>Apa itu templat item per baris?</summary>
+        <div class="answer">Templat (Pro) memungkinkan Anda menyimpan item per baris yang sering digunakan &mdash; lengkap dengan deskripsi, satuan, harga default, dan kategori (Pipa, Listrik, dll.) &mdash; dan menggunakannya kembali di berbagai change order. Anda bahkan dapat menyertakan pengali harga untuk markup khusus pelanggan. Templat melacak pemakaian sehingga item yang paling sering Anda gunakan muncul lebih dulu.</div>
+      </details>
+
+      <details>
+        <summary>Apa itu saran item per baris berbasis AI?</summary>
+        <div class="answer">Lampirkan foto ke change order dan AI di perangkat milik ScopeProof (menggunakan framework Vision dari Apple) membaca teks yang terlihat dan menyarankan item per baris yang relevan di berbagai bidang &mdash; pipa, listrik, HVAC, pertukangan kayu, lantai, pengecatan, atap, dan lainnya. Semuanya berjalan sepenuhnya di perangkat Anda, tanpa panggilan ke cloud. Tersedia di tier Gratis maupun Pro.</div>
+      </details>
+
+      <details>
+        <summary>Apa saja yang termasuk dalam Gratis vs Pro?</summary>
+        <div class="answer"><strong>Gratis</strong> mencakup hingga 3 change order dalam satu waktu, 3 item per baris per change order, 1 foto per change order, hingga 2 proyek, pengambilan tanda tangan langsung, dan PDF dengan tanda air. <strong>Pro ($9.99 sekali bayar)</strong> membuka: change order tanpa batas, tanda tangan jarak jauh (email / SMS / tautan), item per baris dan foto tanpa batas, proyek tanpa batas, mode Dispute-Proof, ekspor ZIP bukti, templat item per baris, logo perusahaan + warna merek + tanda tangan kontraktor pada PDF, penghapusan tanda air, serta ekspor QuickBooks IIF + JSON. Sekali beli, selamanya &mdash; tanpa langganan.</div>
+      </details>
+
+      <details>
+        <summary>Bisakah saya menambahkan branding perusahaan saya?</summary>
+        <div class="answer">Bisa (Pro). Unggah logo perusahaan Anda, atur warna merek, dan tambahkan tanda tangan kontraktor Anda. Branding Anda muncul di setiap PDF &mdash; header, garis aksen, dan blok tanda tangan di bagian bawah.</div>
+      </details>
+
+      <details>
+        <summary>Format ekspor apa saja yang tersedia?</summary>
+        <div class="answer">Semua tier dapat mengekspor <strong>PDF</strong> profesional (US Letter, multi-halaman) dan ringkasan <strong>CSV</strong>. Pro menambahkan file <strong>QuickBooks IIF</strong> untuk impor akuntansi, ekspor <strong>JSON</strong> dari seluruh riwayat change order, dan <strong>ZIP bukti</strong> untuk change order Dispute-Proof. Bagikan melalui email, Pesan, AirDrop, atau simpan ke Files.</div>
+      </details>
+
+      <details>
+        <summary>Bisakah saya mengedit change order setelah ditandatangani?</summary>
+        <div class="answer">Tidak &mdash; change order yang telah ditandatangani sengaja dibuat tidak dapat diubah untuk menjaga integritas hukum. Jika ada yang perlu diubah, gunakan <strong>Duplikat sebagai Draf Baru</strong> (memulai dari awal) atau <strong>Buat Revisi</strong> (terhubung ke yang asli melalui rantai revisi sehingga riwayatnya tetap jelas). Kedua opsi tersedia dari tampilan detail change order yang telah ditandatangani.</div>
+      </details>
+
+      <details>
+        <summary>Apakah aplikasi berfungsi secara offline?</summary>
+        <div class="answer">Ya. Pembuatan change order, item per baris, foto, pengambilan tanda tangan, pembuatan PDF, ekspor CSV, dan verifikasi integritas semuanya berfungsi tanpa koneksi jaringan. Satu-satunya fitur online adalah <strong>tanda tangan jarak jauh</strong> (yang memerlukan jaringan untuk mengirimkan tautan aman dan menerima tanda tangan yang dikembalikan) serta validasi pembelian App Store.</div>
+      </details>
+
+      <details>
+        <summary>Apakah ScopeProof bekerja dengan TradeSnap?</summary>
+        <div class="answer">ScopeProof dan TradeSnap adalah aplikasi pendamping dari pengembang yang sama. <strong>ScopeProof</strong> menangani change order yang ditandatangani dengan item per baris dan harga. <strong>TradeSnap</strong> menangani dokumentasi foto sebelum/sesudah. Keduanya berbagi bahasa desain tetapi tidak berbagi data &mdash; masing-masing berdiri sendiri. Gunakan keduanya jika alur kerja Anda membutuhkan keduanya, atau salah satunya saja.</div>
+      </details>
+
+      <details>
+        <summary>Apakah data saya bersifat pribadi?</summary>
+        <div class="answer">Ya. Semua data change order Anda &mdash; change order, data pelanggan, foto, dan tanda tangan &mdash; tetap berada di perangkat Anda dan tidak pernah dikumpulkan. Dengan izin Anda, ScopeProof berbagi analitik penggunaan anonim dan laporan kerusakan (melalui Google Firebase) agar kami dapat memperbaiki bug dan meningkatkan aplikasi; ini bersifat opt-in di UE, Inggris, dan Swiss, aktif secara default di tempat lain, dan dapat dimatikan kapan saja di <strong>Pengaturan &rsaquo; Data &amp; Privasi</strong>. Tidak ada iklan, tidak ada pelacakan lintas aplikasi, dan tidak diperlukan akun. Satu-satunya saat data lain meninggalkan perangkat Anda adalah tanda tangan jarak jauh (Pro): change order diunggah dalam bentuk terenkripsi ke Firebase agar browser web pelanggan dapat mengambilnya &mdash; dan kunci dekripsi tetap berada di fragmen URL yang Anda kirimkan, sehingga tidak pernah mencapai server kami. Lihat <a href="https://hugolamarreftc.github.io/ScopeProof-legal/">kebijakan privasi</a> kami untuk rincian lengkap.</div>
+      </details>
+
+      <details>
+        <summary>Aplikasi mengalami crash &mdash; apa yang harus saya lakukan?</summary>
+        <div class="answer">Pertama, pastikan Anda menjalankan versi terbaru dari App Store. Jika masalah berlanjut, silakan email kami di <strong>forthemcreation@gmail.com</strong> dengan menyertakan model perangkat dan versi iOS Anda agar kami dapat menyelidikinya.</div>
+      </details>
+    </section>
+    </div>
+
+    <div id="th" class="lang-section">
+<!-- ━━ Contact ━━ -->
+    <section class="contact-card">
+      <h2>ติดต่อเรา</h2>
+      <p>มีคำถาม เจอข้อผิดพลาด หรืออยากเสนอฟีเจอร์ใหม่ใช่ไหม? โดยปกติเราจะตอบกลับภายใน 24&nbsp;ชั่วโมง</p>
+      <a class="email-link" href="mailto:forthemcreation@gmail.com">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        forthemcreation@gmail.com
+      </a>
+    </section>
+
+    <!-- ━━ FAQ ━━ -->
+    <section class="faq">
+      <h2>คำถามที่พบบ่อย</h2>
+
+      <details>
+        <summary>ScopeProof คืออะไร?</summary>
+        <div class="answer">ScopeProof เป็นแอป iOS แบบสแตนด์อโลนสำหรับผู้รับเหมาที่ต้องบันทึกและเรียกเก็บเงินสำหรับงานที่เปลี่ยนแปลงจากขอบเขตเดิมขณะอยู่หน้างาน สร้างใบสั่งเปลี่ยนแปลงงานพร้อมรายการแยกย่อย เซ็นชื่อลูกค้าได้ทันทีหน้างานหรือจากระยะไกล แล้วสร้างไฟล์ PDF อย่างมืออาชีพ &mdash; ทั้งหมดเสร็จในไม่ถึงนาที ใช้งานออฟไลน์ได้ และไม่มีค่าสมาชิกรายเดือน</div>
+      </details>
+
+      <details>
+        <summary>ฉันจะสร้างใบสั่งเปลี่ยนแปลงงานได้อย่างไร?</summary>
+        <div class="answer">แตะปุ่ม <strong>+</strong> บนหน้าจอหลัก ScopeProof จะกรอกชื่องานอัจฉริยะให้อัตโนมัติจากตำแหน่งปัจจุบันของคุณ (ชื่อถนน + วันที่) เพื่อให้คุณพิมพ์น้อยลง เพิ่มรายการต่าง ๆ (รายละเอียด จำนวน ราคาต่อหน่วย หน่วย) แนบรูปถ่ายเป็นหลักฐานได้ตามต้องการ และระบุข้อมูลลูกค้า ยอดรวมจะคำนวณให้อัตโนมัติตามสกุลเงินของคุณ</div>
+      </details>
+
+      <details>
+        <summary>การเซ็นชื่อทำงานอย่างไร?</summary>
+        <div class="answer">เมื่องานเสร็จ ส่งอุปกรณ์ให้ลูกค้า ลูกค้าจะตรวจดูใบสั่งเปลี่ยนแปลงงานและเซ็นชื่อบนหน้าจอได้เลยด้วยนิ้วหรือ Apple Pencil ลายเซ็นจะถูกบันทึกเป็นไฟล์ PNG ที่คมชัดและผนึกไว้กับใบสั่ง &mdash; พร้อมกับเวลาที่ประทับ และหากเปิดใช้งานไว้ ก็จะมีตำแหน่ง GPS และข้อมูลอุปกรณ์ด้วย</div>
+      </details>
+
+      <details>
+        <summary>การเซ็นชื่อจากระยะไกลคืออะไร?</summary>
+        <div class="answer">การเซ็นชื่อจากระยะไกล (Pro) ช่วยให้ลูกค้าเซ็นใบสั่งเปลี่ยนแปลงงานได้จากทุกที่ ScopeProof จะส่งลิงก์เว็บที่ปลอดภัยให้ลูกค้าผ่านอีเมล SMS หรือคัดลอกไปวาง ลูกค้าเปิดลิงก์ในเบราว์เซอร์ ตรวจดูใบสั่ง แล้วเซ็นชื่อ ลายเซ็นจะกลับมายังแอปของคุณโดยอัตโนมัติผ่านการแจ้งเตือนแบบพุช ข้อมูลใบสั่งเปลี่ยนแปลงงานถูกเข้ารหัสแบบ end-to-end &mdash; กุญแจถอดรหัสอยู่เฉพาะใน URL ที่คุณส่งเท่านั้น ไม่เคยอยู่บนเซิร์ฟเวอร์ของเรา</div>
+      </details>
+
+      <details>
+        <summary>การเซ็นชื่อจากระยะไกลรักษาความเป็นส่วนตัวและความปลอดภัยอย่างไร?</summary>
+        <div class="answer">
+          เมื่อคุณส่งใบสั่งเปลี่ยนแปลงงานเพื่อเซ็นจากระยะไกล ข้อมูลจะถูกเข้ารหัสบนอุปกรณ์ของคุณด้วย <strong>AES-256-GCM</strong> ก่อนที่อะไรจะออกจากอุปกรณ์ มีเพียงข้อมูลที่เข้ารหัสแล้วเท่านั้นที่ถูกอัปโหลดไปยังแบ็กเอนด์ของเรา (Firebase)
+          <ul style="margin: 10px 0 10px 20px;">
+            <li>กุญแจถอดรหัสจะไม่ถูกอัปโหลด แต่ถูกฝังไว้ใน <strong>URL fragment</strong> (ส่วนที่อยู่หลัง <code>#</code>) ซึ่งเบราว์เซอร์จะไม่ส่งไปยังเซิร์ฟเวอร์ &mdash; ดังนั้นมีเพียงคุณและลูกค้าของคุณเท่านั้นที่มีกุญแจนี้</li>
+            <li>คำขอเซ็นชื่อจะ<strong>หมดอายุโดยอัตโนมัติหลังจาก 7 วัน</strong> หลังจากนั้นลิงก์จะใช้งานไม่ได้</li>
+            <li>ScopeProof เข้าสู่ระบบ Firebase แบบ<em>ไม่ระบุตัวตน</em> &mdash; ไม่มีบัญชี ไม่มีอีเมล และไม่มีการส่งตัวระบุตัวตนใด ๆ เกี่ยวกับคุณ</li>
+            <li>การแจ้งเตือนแบบพุช (Firebase Cloud Messaging) ใช้เพียงเพื่อแจ้งคุณเมื่อลูกค้าเปิดดู เซ็นชื่อ ปฏิเสธ หรือปล่อยให้คำขอหมดอายุเท่านั้น</li>
+          </ul>
+          รายละเอียดทั้งหมดอยู่ใน<a href="https://hugolamarreftc.github.io/ScopeProof-legal/">นโยบายความเป็นส่วนตัว</a>ของเรา
+        </div>
+      </details>
+
+      <details>
+        <summary>โหมด Dispute-Proof คืออะไร?</summary>
+        <div class="answer">โหมด Dispute-Proof (Pro) จะผนึกใบสั่งเปลี่ยนแปลงงานที่เซ็นแล้วในเชิงการเข้ารหัสด้วย<strong>การแฮชแบบ SHA-256</strong> และ<strong>ลายเซ็น HMAC-SHA256</strong> ที่สร้างขึ้นด้วยกุญแจที่อยู่เฉพาะในอุปกรณ์ ค่าแฮชครอบคลุมรายการต่าง ๆ รูปถ่ายที่แนบ ลายเซ็นลูกค้า ตำแหน่ง GPS และเวลาที่ประทับขณะเซ็น หากภายหลังมีใครแก้ไขส่วนใดส่วนหนึ่ง การตรวจสอบจะตรวจพบการดัดแปลงนั้น คุณสามารถตรวจสอบใบสั่งที่เซ็นแล้วซ้ำได้ทุกเมื่อจากหน้ารายละเอียด</div>
+      </details>
+
+      <details>
+        <summary>ชุดหลักฐานคืออะไร?</summary>
+        <div class="answer">ชุดหลักฐาน (Pro) คือไฟล์ ZIP ที่คุณสามารถส่งออกได้สำหรับใบสั่งเปลี่ยนแปลงงานที่เซ็นแล้วทุกใบ ภายในประกอบด้วยรูปถ่ายต้นฉบับ ภาพลายเซ็นลูกค้า ไฟล์ PDF ที่เซ็นแล้ว ไฟล์รายการพิสูจน์ที่อ่านได้ด้วยเครื่อง (ค่าแฮช SHA-256 ตำแหน่ง GPS เวลาที่ประทับ) และไฟล์ README ที่อธิบายวิธีที่ใครก็ตามสามารถตรวจสอบค่าแฮชได้ด้วยตัวเองโดยใช้เครื่องมือมาตรฐานอย่าง <strong>shasum</strong> มีประโยชน์สำหรับข้อพิพาททางกฎหมาย การเรียกร้องค่าสินไหมประกัน หรือเก็บไว้เป็นบันทึกของคุณเอง</div>
+      </details>
+
+      <details>
+        <summary>เทมเพลตรายการคืออะไร?</summary>
+        <div class="answer">เทมเพลต (Pro) ช่วยให้คุณบันทึกรายการที่ใช้บ่อย &mdash; พร้อมรายละเอียด หน่วย ราคาเริ่มต้น และหมวดหมู่ (ประปา ไฟฟ้า ฯลฯ) &mdash; แล้วนำกลับมาใช้ซ้ำในใบสั่งเปลี่ยนแปลงงานต่าง ๆ คุณยังแนบตัวคูณราคาสำหรับการบวกเพิ่มเฉพาะลูกค้าได้อีกด้วย เทมเพลตจะติดตามการใช้งาน เพื่อให้รายการที่คุณใช้บ่อยที่สุดแสดงขึ้นมาก่อน</div>
+      </details>
+
+      <details>
+        <summary>คำแนะนำรายการด้วย AI คืออะไร?</summary>
+        <div class="answer">แนบรูปถ่ายเข้ากับใบสั่งเปลี่ยนแปลงงาน แล้ว AI บนอุปกรณ์ของ ScopeProof (ใช้ Vision framework ของ Apple) จะอ่านข้อความที่มองเห็นได้และแนะนำรายการที่เกี่ยวข้องในงานช่างหลายสาขา &mdash; ประปา ไฟฟ้า ระบบ HVAC งานไม้ งานปูพื้น งานทาสี งานหลังคา และอื่น ๆ ทำงานบนอุปกรณ์ของคุณทั้งหมด ไม่มีการเรียกใช้คลาวด์ ใช้ได้ทั้งระดับ Free และ Pro</div>
+      </details>
+
+      <details>
+        <summary>Free กับ Pro ต่างกันอย่างไร?</summary>
+        <div class="answer"><strong>Free</strong> รองรับใบสั่งเปลี่ยนแปลงงานสูงสุด 3 ใบในแต่ละครั้ง 3 รายการต่อใบสั่ง รูปถ่าย 1 รูปต่อใบสั่ง โปรเจกต์สูงสุด 2 โปรเจกต์ การเซ็นชื่อแบบพบหน้า และไฟล์ PDF ที่มีลายน้ำ <strong>Pro ($9.99 ครั้งเดียว)</strong> ปลดล็อก: ใบสั่งเปลี่ยนแปลงงานไม่จำกัด การเซ็นชื่อจากระยะไกล (อีเมล / SMS / ลิงก์) รายการและรูปถ่ายไม่จำกัด โปรเจกต์ไม่จำกัด โหมด Dispute-Proof การส่งออกหลักฐานเป็น ZIP เทมเพลตรายการ โลโก้บริษัท + สีแบรนด์ + ลายเซ็นผู้รับเหมาบน PDF การลบลายน้ำ และการส่งออก QuickBooks IIF + JSON ซื้อครั้งเดียว ใช้ได้ตลอดไป &mdash; ไม่มีค่าสมาชิกรายเดือน</div>
+      </details>
+
+      <details>
+        <summary>ฉันใส่แบรนด์ของบริษัทได้ไหม?</summary>
+        <div class="answer">ได้ (Pro) อัปโหลดโลโก้บริษัท ตั้งค่าสีแบรนด์ และเพิ่มลายเซ็นผู้รับเหมาของคุณ แบรนด์ของคุณจะปรากฏบนทุกไฟล์ PDF &mdash; ส่วนหัว เส้นสีเน้น และช่องลายเซ็นด้านล่าง</div>
+      </details>
+
+      <details>
+        <summary>มีรูปแบบการส่งออกอะไรบ้าง?</summary>
+        <div class="answer">ทุกระดับสามารถส่งออกเป็นไฟล์ <strong>PDF</strong> อย่างมืออาชีพ (ขนาด US Letter หลายหน้า) และสรุปแบบ <strong>CSV</strong> ได้ Pro เพิ่มไฟล์ <strong>QuickBooks IIF</strong> สำหรับนำเข้าระบบบัญชี การส่งออก <strong>JSON</strong> ของประวัติใบสั่งเปลี่ยนแปลงงานทั้งหมด และ <strong>ZIP หลักฐาน</strong> สำหรับใบสั่งที่ใช้ Dispute-Proof แชร์ผ่านอีเมล Messages AirDrop หรือบันทึกลงในแอป Files</div>
+      </details>
+
+      <details>
+        <summary>ฉันแก้ไขใบสั่งเปลี่ยนแปลงงานหลังจากเซ็นแล้วได้ไหม?</summary>
+        <div class="answer">ไม่ได้ &mdash; ใบสั่งเปลี่ยนแปลงงานที่เซ็นแล้วถูกออกแบบให้แก้ไขไม่ได้โดยเจตนา เพื่อรักษาความสมบูรณ์ทางกฎหมาย หากต้องเปลี่ยนแปลงอะไร ให้ใช้ <strong>ทำสำเนาเป็นฉบับร่างใหม่</strong> (เริ่มใหม่ทั้งหมด) หรือ <strong>สร้างฉบับแก้ไข</strong> (เชื่อมโยงกับฉบับเดิมผ่านสายโซ่ของการแก้ไข เพื่อให้ประวัติชัดเจน) ทั้งสองตัวเลือกใช้ได้จากหน้ารายละเอียดของใบสั่งที่เซ็นแล้ว</div>
+      </details>
+
+      <details>
+        <summary>แอปใช้งานออฟไลน์ได้ไหม?</summary>
+        <div class="answer">ได้ การสร้างใบสั่งเปลี่ยนแปลงงาน รายการต่าง ๆ รูปถ่าย การเซ็นชื่อ การสร้าง PDF การส่งออก CSV และการตรวจสอบความสมบูรณ์ ล้วนทำงานได้โดยไม่ต้องเชื่อมต่อเครือข่าย ฟีเจอร์ที่ต้องออนไลน์มีเพียง<strong>การเซ็นชื่อจากระยะไกล</strong> (ซึ่งต้องใช้เครือข่ายเพื่อส่งลิงก์ที่ปลอดภัยและรับลายเซ็นที่ตอบกลับมา) และการตรวจสอบการซื้อจาก App Store เท่านั้น</div>
+      </details>
+
+      <details>
+        <summary>ScopeProof ใช้งานร่วมกับ TradeSnap ได้ไหม?</summary>
+        <div class="answer">ScopeProof และ TradeSnap เป็นแอปคู่กันจากผู้พัฒนารายเดียวกัน <strong>ScopeProof</strong> จัดการใบสั่งเปลี่ยนแปลงงานที่เซ็นแล้วพร้อมรายการและราคา <strong>TradeSnap</strong> จัดการการบันทึกภาพก่อน/หลัง ทั้งสองใช้ภาษาการออกแบบร่วมกันแต่ไม่แชร์ข้อมูลกัน &mdash; แต่ละแอปเป็นสแตนด์อโลน ใช้ทั้งสองแอปหากเวิร์กโฟลว์ของคุณต้องการ หรือใช้แอปใดแอปหนึ่งเดี่ยว ๆ ก็ได้</div>
+      </details>
+
+      <details>
+        <summary>ข้อมูลของฉันเป็นส่วนตัวไหม?</summary>
+        <div class="answer">เป็นส่วนตัว ข้อมูลใบสั่งเปลี่ยนแปลงงานทั้งหมดของคุณ &mdash; ใบสั่ง ข้อมูลลูกค้า รูปถ่าย และลายเซ็น &mdash; อยู่บนอุปกรณ์ของคุณและไม่เคยถูกเก็บรวบรวม เมื่อได้รับอนุญาตจากคุณ ScopeProof จะแชร์ข้อมูลวิเคราะห์การใช้งานแบบไม่ระบุตัวตนและรายงานข้อขัดข้อง (ผ่าน Google Firebase) เพื่อให้เราแก้ไขข้อผิดพลาดและปรับปรุงแอปได้ ในสหภาพยุโรป สหราชอาณาจักร และสวิตเซอร์แลนด์ จะเป็นแบบเลือกเข้าร่วม (opt-in) ส่วนภูมิภาคอื่นจะเปิดใช้งานตามค่าเริ่มต้น และปิดได้ทุกเมื่อใน <strong>การตั้งค่า &rsaquo; ข้อมูล &amp; ความเป็นส่วนตัว</strong> ไม่มีโฆษณา ไม่มีการติดตามข้ามแอป และไม่ต้องมีบัญชี อีกกรณีเดียวที่ข้อมูลออกจากอุปกรณ์ของคุณคือการเซ็นชื่อจากระยะไกล (Pro): ใบสั่งเปลี่ยนแปลงงานจะถูกอัปโหลดในรูปแบบที่เข้ารหัสไปยัง Firebase เพื่อให้เบราว์เซอร์ของลูกค้าดึงข้อมูลได้ &mdash; และกุญแจถอดรหัสจะอยู่ใน URL fragment ที่คุณส่งให้ลูกค้า จึงไม่เคยถึงเซิร์ฟเวอร์ของเรา ดูรายละเอียดทั้งหมดได้ใน<a href="https://hugolamarreftc.github.io/ScopeProof-legal/">นโยบายความเป็นส่วนตัว</a>ของเรา</div>
+      </details>
+
+      <details>
+        <summary>แอปขัดข้อง &mdash; ฉันควรทำอย่างไร?</summary>
+        <div class="answer">ขั้นแรก ตรวจสอบว่าคุณใช้เวอร์ชันล่าสุดจาก App Store แล้ว หากปัญหายังคงอยู่ โปรดส่งอีเมลถึงเราที่ <strong>forthemcreation@gmail.com</strong> พร้อมระบุรุ่นอุปกรณ์และเวอร์ชัน iOS ของคุณ เพื่อให้เราตรวจสอบได้</div>
+      </details>
+    </section>
+    </div>
 
     <!-- ━━ Footer ━━ -->
     <footer>
